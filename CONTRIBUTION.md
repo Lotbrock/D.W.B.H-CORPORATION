@@ -1,46 +1,46 @@
-#Las razones de estas convenciones:
-##Tener un registro sobre los cambios generados.
+# Las razones de estas convenciones:
+## Tener un registro sobre los cambios generados.
 
-#Formato del mensaje de confirmación:
+# Formato del mensaje de confirmación:
 
-##<type> <subject>
-##en blanco
-##<body>
-##en blanco
-##<footer>
+## <type> <subject>
+## en blanco
+## <body>
+## en blanco
+## <footer>
 
-#Ejemplo de mensaje de confirmación:
-##docs: Modificación de requerimientos.
+# Ejemplo de mensaje de confirmación:
+## docs: Modificación de requerimientos.
 
-##Se realizaron cambios de los requerimientos por nueva línea de desarrollo.
+## Se realizaron cambios de los requerimientos por nueva línea de desarrollo.
 
-##close #123 de acuerdo a las historias de usuario  e insection del GitHub.
+## close #123 de acuerdo a las historias de usuario  e insection del GitHub.
 
-#Asunto del Mensaje
+# Asunto del Mensaje
 
-##La primera línea no puede tener más de 20 caracteres
-#<type>Valores permitidos 
+## La primera línea no puede tener más de 20 caracteres
+# <type>Valores permitidos 
 
-#feat (nueva característica para el usuario, no una nueva característica para el script de compilación)
+# feat (nueva característica para el usuario, no una nueva característica para el script de compilación)
 
-#corrección (corrección de errores para el usuario, no una corrección para un script de compilación)
+# corrección (corrección de errores para el usuario, no una corrección para un script de compilación)
 
-#docs (cambios a la documentación)
+# docs (cambios a la documentación)
 
-#estilo (formateo, puntos y comas que faltan, etc., sin cambio de código de producción)
+# estilo (formateo, puntos y comas que faltan, etc., sin cambio de código de producción)
 
-#refactor (código de producción de refactorización, por ejemplo, cambio de nombre de una variable)
+# refactor (código de producción de refactorización, por ejemplo, cambio de nombre de una variable)
 
-#prueba (agregando pruebas faltantes, pruebas de refactorización, sin cambio de código de producción)
+# prueba (agregando pruebas faltantes, pruebas de refactorización, sin cambio de código de producción)
 
-#Chore (actualizando tareas grunt, etc; sin cambio de código de producción)
+# Chore (actualizando tareas grunt, etc; sin cambio de código de producción)
 
-#Cuerpo del mansaje
+# Cuerpo del mansaje
 
-##se usa el imperativo, tiempo presente: "modificación"
-##motivación del cambio y fallas en la versión anterior
+## se usa el imperativo, tiempo presente: "modificación"
+## motivación del cambio y fallas en la versión anterior
 
-#Pie de página
+# Pie de página
 ## Los problemas cerrados se enumeran en una línea separada en el pie de página
 ## close #1234
 
