@@ -17,6 +17,5 @@ public class App {
         catch (PersistenceException e){
             System.out.println(e.getMessage());
         }
-
     }
 }

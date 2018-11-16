@@ -36,7 +36,7 @@
     <class>co.edu.sena.horarios.model.entities.ServidorCorreoElectronico</class>
     <class>co.edu.sena.horarios.model.entities.Vinculacion</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:4306/db?useSSL=false"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.50.31:4306/db?useSSL=false"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
       <property name="javax.persistence.jdbc.password" value="123456"/>
