@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1.0.0" />
+        <module name="odp" />
       </profile>
     </annotationProcessing>
   </component>
