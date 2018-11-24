@@ -53,19 +53,19 @@ assertEquals(instructor,(Instructor) instructorDAO.find(new InstructorPK("CC","1
     }
 
     @Test
-    public void test4FindAll() {
+    public void test3FindAll() {
         List<Instructor> instructors = (List<Instructor>) instructorDAO.findAll();
         assertFalse(instructors.isEmpty());
     }
 
     @Test
-    public void test5Find() {
+    public void test4Find() {
         Instructor instructorEncontrado =(Instructor) instructorDAO.find(new InstructorPK("CC", "1010091473"));
         assertNotNull(instructorEncontrado);
     }
 
     @Test
-    public void test6Remove() {
+    public void test5Remove() {
         instructorDAO.remove((Instructor) instructorDAO.find(new InstructorPK("CC", "1010091473")));
         assertNull((Instructor)instructorDAO.find(new InstructorPK("CC", "1010091473")));
     }
