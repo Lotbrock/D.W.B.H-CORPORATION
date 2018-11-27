@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a956f4f8-6c99-45cd-ba57-b4974c6dadef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/InstructorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/VinculacionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAOImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/factory/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/factory/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,139 +17,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="562305565">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="3" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="3" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="212" />
-          <entry key="txt" value="35" />
-          <entry key="xml" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="212" />
-          <entry key="PLAIN_TEXT" value="35" />
-          <entry key="XML" value="18" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-3277452">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="9" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="9" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="2" />
-          <entry key="java" value="672" />
-          <entry key="txt" value="71" />
-          <entry key="xml" value="31" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="672" />
-          <entry key="PLAIN_TEXT" value="73" />
-          <entry key="XML" value="31" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="38" column="134" selection-start-line="38" selection-start-column="134" selection-end-line="38" selection-end-column="134" />
+            <state relative-caret-position="281">
+              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="349">
+              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/controller/factory/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/factory/DAOFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.0.0.iml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -160,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -177,19 +60,17 @@
         <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/ActividadTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/InstructorDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/factory/DAOFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/VinculacionDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/factory/DAOFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAOImplTest.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -198,7 +79,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -213,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -254,7 +136,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proyecto" type="b2602c69:ProjectViewProjectNode" />
@@ -263,7 +145,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,14 +197,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542904762706" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543020066370" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -336,6 +217,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="co.edu.sena.horarios.model.controller.dao.mysql" />
       <recent name="co.edu.sena.horarios.model.entities" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="co.edu.sena.horarios.model.controller.dao" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -353,20 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InstructorDAOImplTest.test1Insert">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.edu.sena.horarios.model.entities.controller.factory.App" />
-      <module name="odp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.edu.sena.horarios.model.entities.controller.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.VinculacionDAOImplTest.test5Remove">
     <configuration name="InstructorDAOImplTest.test1Insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="odp" />
       <extension name="coverage">
@@ -383,14 +254,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InstructorDAOImplTest.test4FindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.sena.horarios.model.controller.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql.InstructorDAOImplTest" />
+      <option name="METHOD_NAME" value="test4FindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VinculacionDAOImplTest.test3FindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.sena.horarios.model.controller.dao.mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql.VinculacionDAOImplTest" />
+      <option name="METHOD_NAME" value="test3FindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VinculacionDAOImplTest.test4Find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.sena.horarios.model.controller.dao.mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql.VinculacionDAOImplTest" />
+      <option name="METHOD_NAME" value="test4Find" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VinculacionDAOImplTest.test5Remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="odp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.sena.horarios.model.controller.dao.mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.sena.horarios.model.controller.dao.mysql.VinculacionDAOImplTest" />
+      <option name="METHOD_NAME" value="test5Remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.InstructorDAOImplTest.test4FindAll" />
       <item itemvalue="JUnit.InstructorDAOImplTest.test1Insert" />
+      <item itemvalue="JUnit.VinculacionDAOImplTest.test3FindAll" />
+      <item itemvalue="JUnit.VinculacionDAOImplTest.test4Find" />
+      <item itemvalue="JUnit.VinculacionDAOImplTest.test5Remove" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VinculacionDAOImplTest.test5Remove" />
+        <item itemvalue="JUnit.VinculacionDAOImplTest.test4Find" />
+        <item itemvalue="JUnit.VinculacionDAOImplTest.test3FindAll" />
+        <item itemvalue="JUnit.InstructorDAOImplTest.test4FindAll" />
         <item itemvalue="JUnit.InstructorDAOImplTest.test1Insert" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -408,6 +349,8 @@
       <workItem from="1542638193577" duration="1956000" />
       <workItem from="1542900520438" duration="147000" />
       <workItem from="1542900692738" duration="3670000" />
+      <workItem from="1542920787318" duration="2871000" />
+      <workItem from="1543015380397" duration="4073000" />
     </task>
     <task id="LOCAL-00001" summary="Chore: Mapeo!.">
       <created>1542386710335</created>
@@ -423,22 +366,56 @@
       <option name="project" value="LOCAL" />
       <updated>1542387005524</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Chore:Se acaban teast de Entity intructor">
+      <created>1543018809223</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543018809223</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InstructorDAOImplTest_test1Insert - 2018.11.22 at 11h 38m 54s.xml">
+    <history-entry file="InstructorDAOImplTest_test6Remove - 2018.11.23 at 19h 17m 06s.xml">
+      <configuration name="InstructorDAOImplTest.test6Remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstructorDAOImplTest_test6Remove - 2018.11.23 at 19h 17m 31s.xml">
+      <configuration name="InstructorDAOImplTest.test6Remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VinculacionDAOImplTest_test1Insert - 2018.11.23 at 19h 29m 23s.xml">
+      <configuration name="VinculacionDAOImplTest.test1Insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VinculacionDAOImplTest_test2Update - 2018.11.23 at 19h 32m 05s.xml">
+      <configuration name="VinculacionDAOImplTest.test2Update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstructorDAOImplTest_test4FindAll - 2018.11.23 at 19h 33m 36s.xml">
+      <configuration name="InstructorDAOImplTest.test4FindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstructorDAOImplTest_test1Insert - 2018.11.23 at 19h 33m 42s.xml">
       <configuration name="InstructorDAOImplTest.test1Insert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InstructorDAOImplTest_test4FindAll - 2018.11.23 at 19h 33m 48s.xml">
+      <configuration name="InstructorDAOImplTest.test4FindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VinculacionDAOImplTest_test3FindAll - 2018.11.23 at 19h 34m 15s.xml">
+      <configuration name="VinculacionDAOImplTest.test3FindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VinculacionDAOImplTest_test3FindAll - 2018.11.23 at 19h 34m 57s.xml">
+      <configuration name="VinculacionDAOImplTest.test3FindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VinculacionDAOImplTest_test4Find - 2018.11.23 at 19h 36m 08s.xml">
+      <configuration name="VinculacionDAOImplTest.test4Find" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8606000" />
+    <option name="totallyTimeSpent" value="15550000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3464448" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1726361" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -447,7 +424,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32839838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,7 +436,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarQube" order="13" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -469,9 +446,11 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="9" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3464448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3381089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -480,54 +459,107 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32839838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="SonarLint" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarQube" order="13" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="0" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="9" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Chore: Mapeo!." />
     <MESSAGE value="Chore:Mapeo." />
     <MESSAGE value="Chore:Se acaba el basico de donde se sacaran las feactures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chore:Se acaba el basico de donde se sacaran las feactures" />
+    <MESSAGE value="Chore:Se acaban teast de Entity intructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chore:Se acaban teast de Entity intructor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/ActividadTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java" />
+    <entry file="file://$PROJECT_DIR$/1.0.0.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Aprendiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Competencia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/EstadoFicha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/NivelFormacionTecnica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state>
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/PlaneacionParaTrimestres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/RolUsuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Vinculacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/VersionHorarioPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Actividad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="289">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -535,53 +567,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/InterefaceDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/ActividadPK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.0.0.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Ambiente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Especialidad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="76" selection-start-line="64" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Modalidad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/EstadoFormacionFicha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Fase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/controller/factory/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/Instructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
+        <state relative-caret-position="-1314">
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar!/javax/persistence/EntityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/InterefaceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/InstructorDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/AbstractDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/VinculacionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/factory/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        <state relative-caret-position="85">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -597,36 +697,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/factory/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="38" column="134" selection-start-line="38" selection-start-column="134" selection-end-line="38" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/entities/controller/factory/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="187">
+          <caret line="13" column="104" selection-start-line="13" selection-start-column="104" selection-end-line="13" selection-end-column="104" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/InstructorDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/edu/sena/horarios/model/controller/dao/mysql/VinculacionDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
