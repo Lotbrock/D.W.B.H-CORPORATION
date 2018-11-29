@@ -42,34 +42,6 @@ export class SettingsPage extends React.Component<IUserSettingsProps, IUserSetti
           <Col md="8">
             <h2 id="settings-title">User settings for {account.login}</h2>
             <AvForm id="settings-form" onValidSubmit={this.handleValidSubmit}>
-              {/* First name */}
-              <AvField
-                className="form-control"
-                name="firstName"
-                label="First Name"
-                id="firstName"
-                placeholder="Your first name"
-                validate={{
-                  required: { value: true, errorMessage: 'Your first name is required.' },
-                  minLength: { value: 1, errorMessage: 'Your first name is required to be at least 1 character' },
-                  maxLength: { value: 50, errorMessage: 'Your first name cannot be longer than 50 characters' }
-                }}
-                value={account.firstName}
-              />
-              {/* Last name */}
-              <AvField
-                className="form-control"
-                name="lastName"
-                label="Last Name"
-                id="lastName"
-                placeholder="Your last name"
-                validate={{
-                  required: { value: true, errorMessage: 'Your last name is required.' },
-                  minLength: { value: 1, errorMessage: 'Your last name is required to be at least 1 character' },
-                  maxLength: { value: 50, errorMessage: 'Your last name cannot be longer than 50 characters' }
-                }}
-                value={account.lastName}
-              />
               {/* Email */}
               <AvField
                 name="email"

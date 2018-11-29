@@ -96,37 +96,6 @@ export class UserManagementUpdate extends React.Component<IUserManagementUpdateP
                   />
                 </AvGroup>
                 <AvGroup>
-                  <Label for="firstName">First Name</Label>
-                  <AvField
-                    type="text"
-                    className="form-control"
-                    name="firstName"
-                    validate={{
-                      maxLength: {
-                        value: 50,
-                        errorMessage: 'This field cannot be longer than 50 characters.'
-                      }
-                    }}
-                    value={user.firstName}
-                  />
-                </AvGroup>
-                <AvGroup>
-                  <Label for="lastName">Last Name</Label>
-                  <AvField
-                    type="text"
-                    className="form-control"
-                    name="lastName"
-                    validate={{
-                      maxLength: {
-                        value: 50,
-                        errorMessage: 'This field cannot be longer than 50 characters.'
-                      }
-                    }}
-                    value={user.lastName}
-                  />
-                  <AvFeedback>This field cannot be longer than 50 characters.</AvFeedback>
-                </AvGroup>
-                <AvGroup>
                   <AvField
                     name="email"
                     label="Email"
