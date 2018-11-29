@@ -10,7 +10,7 @@
             Dear
         </p>
         <p th:text="#{email.creation.text1}">
-            Tu cuenta ha sido creada, dale click al sigueinte link para ingresar:
+            Your JHipster account has been created, please click on the URL below to access it:
         </p>
         <p>
             <a th:with="url=(@{|${baseUrl}/#/reset/finish?key=${user.resetKey}|})" th:href="${url}"
