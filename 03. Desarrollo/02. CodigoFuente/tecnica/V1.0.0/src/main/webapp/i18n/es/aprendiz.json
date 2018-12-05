@@ -1,0 +1,23 @@
+{
+  "dwbhApp": {
+    "aprendiz": {
+      "home": {
+        "title": "Aprendizs",
+        "createLabel": "Crear nuevo Aprendiz",
+        "createOrEditLabel": "Crear o editar Aprendiz"
+      },
+      "created": "Un nuevo Aprendiz ha sido creado con el identificador {{ param }}",
+      "updated": "Un Aprendiz ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Aprendiz ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Aprendiz {{ id }}?"
+      },
+      "detail": {
+        "title": "Aprendiz"
+      },
+      "documento": "Documento",
+      "ficha": "Ficha",
+      "estadoFormacion": "Estado Formacion"
+    }
+  }
+}

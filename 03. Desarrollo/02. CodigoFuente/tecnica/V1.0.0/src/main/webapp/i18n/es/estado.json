@@ -1,0 +1,9 @@
+{
+  "dwbhApp": {
+    "Estado": {
+      "null": "",
+      "ACTIVO": "ACTIVO",
+      "INACTIVO": "INACTIVO"
+    }
+  }
+}

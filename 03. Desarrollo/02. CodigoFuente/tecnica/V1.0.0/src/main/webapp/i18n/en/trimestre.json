@@ -1,0 +1,25 @@
+{
+  "dwbhApp": {
+    "trimestre": {
+      "home": {
+        "title": "Trimestres",
+        "createLabel": "Create a new Trimestre",
+        "createOrEditLabel": "Create or edit a Trimestre"
+      },
+      "created": "A new Trimestre is created with identifier {{ param }}",
+      "updated": "A Trimestre is updated with identifier {{ param }}",
+      "deleted": "A Trimestre is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Trimestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Trimestre"
+      },
+      "nombreTrimestre": "Nombre Trimestre",
+      "fichaHasTrimestre": "Ficha Has Trimestre",
+      "jornada": "Jornada",
+      "nivelformacion": "Nivelformacion",
+      "planeacion": "Planeacion"
+    }
+  }
+}

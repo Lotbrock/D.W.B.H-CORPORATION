@@ -1,0 +1,45 @@
+{
+    "name": "Actividad",
+    "fields": [
+        {
+            "fieldName": "numeroActividad",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "nombreActividad",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "actividad",
+            "relationshipName": "planeacion",
+            "otherEntityName": "planeacion",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "fase",
+            "otherEntityName": "fase",
+            "otherEntityField": "nombre"
+        }
+    ],
+    "changelogDate": "20181205213050",
+    "entityTableName": "actividad",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

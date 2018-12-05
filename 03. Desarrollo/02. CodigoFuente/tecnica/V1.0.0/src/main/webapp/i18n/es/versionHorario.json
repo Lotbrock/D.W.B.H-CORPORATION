@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "versionHorario": {
+      "home": {
+        "title": "Version Horarios",
+        "createLabel": "Crear nuevo Version Horario",
+        "createOrEditLabel": "Crear o editar Version Horario"
+      },
+      "created": "Un nuevo Version Horario ha sido creado con el identificador {{ param }}",
+      "updated": "Un Version Horario ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Version Horario ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Version Horario {{ id }}?"
+      },
+      "detail": {
+        "title": "Version Horario"
+      },
+      "numeroVersion": "Numero Version",
+      "estado": "Estado",
+      "horario": "Horario",
+      "trimestreVigente": "Trimestre Vigente"
+    }
+  }
+}

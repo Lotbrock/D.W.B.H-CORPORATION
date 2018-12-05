@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "tipoDocumento": {
+      "home": {
+        "title": "Tipo Documentos",
+        "createLabel": "Create a new Tipo Documento",
+        "createOrEditLabel": "Create or edit a Tipo Documento"
+      },
+      "created": "A new Tipo Documento is created with identifier {{ param }}",
+      "updated": "A Tipo Documento is updated with identifier {{ param }}",
+      "deleted": "A Tipo Documento is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tipo Documento {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Documento"
+      },
+      "sigla": "Sigla",
+      "nombreDocumento": "Nombre Documento",
+      "estado": "Estado",
+      "cliente": "Cliente"
+    }
+  }
+}

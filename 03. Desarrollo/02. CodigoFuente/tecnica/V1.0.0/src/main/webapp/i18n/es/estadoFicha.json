@@ -1,0 +1,23 @@
+{
+  "dwbhApp": {
+    "estadoFicha": {
+      "home": {
+        "title": "Estado Fichas",
+        "createLabel": "Crear nuevo Estado Ficha",
+        "createOrEditLabel": "Crear o editar Estado Ficha"
+      },
+      "created": "Un nuevo Estado Ficha ha sido creado con el identificador {{ param }}",
+      "updated": "Un Estado Ficha ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Estado Ficha ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Estado Ficha {{ id }}?"
+      },
+      "detail": {
+        "title": "Estado Ficha"
+      },
+      "nombreEstado": "Nombre Estado",
+      "estado": "Estado",
+      "ficha": "Ficha"
+    }
+  }
+}

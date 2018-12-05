@@ -1,0 +1,36 @@
+{
+    "name": "Aprendiz",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "documento",
+            "otherEntityName": "cliente",
+            "otherEntityField": "numeroDocumento"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "ficha",
+            "otherEntityName": "ficha",
+            "otherEntityField": "numeroFicha"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "estadoFormacion",
+            "otherEntityName": "estadoFormacion",
+            "otherEntityField": "nombreEstado"
+        }
+    ],
+    "changelogDate": "20181205213059",
+    "entityTableName": "aprendiz",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

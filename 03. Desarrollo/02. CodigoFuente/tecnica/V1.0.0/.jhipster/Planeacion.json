@@ -1,0 +1,49 @@
+{
+    "name": "Planeacion",
+    "fields": [
+        {
+            "fieldName": "codigoPlaneacfion",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength",
+                "unique"
+            ],
+            "fieldValidateRulesMaxlength": 50
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "ACTIVO,INACTIVO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "planeacion",
+            "relationshipName": "trimestre",
+            "otherEntityName": "trimestre",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "actividad",
+            "otherEntityName": "actividad",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "planeacion"
+        }
+    ],
+    "changelogDate": "20181205213051",
+    "entityTableName": "planeacion",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

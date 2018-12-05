@@ -1,0 +1,27 @@
+{
+  "dwbhApp": {
+    "ambiente": {
+      "home": {
+        "title": "Ambientes",
+        "createLabel": "Crear nuevo Ambiente",
+        "createOrEditLabel": "Crear o editar Ambiente"
+      },
+      "created": "Un nuevo Ambiente ha sido creado con el identificador {{ param }}",
+      "updated": "Un Ambiente ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Ambiente ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Ambiente {{ id }}?"
+      },
+      "detail": {
+        "title": "Ambiente"
+      },
+      "numeroAmbiente": "Numero Ambiente",
+      "descripcion": "Descripcion",
+      "estado": "Estado",
+      "horario": "Horario",
+      "limitacionAmbiente": "Limitacion Ambiente",
+      "tipoAmbiente": "Tipo Ambiente",
+      "sede": "Sede"
+    }
+  }
+}

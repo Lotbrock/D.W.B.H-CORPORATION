@@ -1,0 +1,52 @@
+{
+    "name": "Trimestre",
+    "fields": [
+        {
+            "fieldName": "nombreTrimestre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 40
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "fichaHasTrimestre",
+            "otherEntityName": "fichaHasTrimestre",
+            "otherEntityRelationshipName": "trimestre"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "jornada",
+            "otherEntityName": "jornada",
+            "otherEntityField": "nombreJornada"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "nivelformacion",
+            "otherEntityName": "nivelFormacion",
+            "otherEntityField": "nivel"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "planeacion",
+            "otherEntityName": "planeacion",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "trimestre"
+        }
+    ],
+    "changelogDate": "20181205213052",
+    "entityTableName": "trimestre",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

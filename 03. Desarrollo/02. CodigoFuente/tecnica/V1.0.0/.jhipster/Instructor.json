@@ -1,0 +1,63 @@
+{
+    "name": "Instructor",
+    "fields": [
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "ACTIVO,INACTIVO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "horario",
+            "otherEntityName": "horario",
+            "otherEntityRelationshipName": "intructor"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "disponibilidadResultados",
+            "otherEntityName": "disponibilidadResultados",
+            "otherEntityRelationshipName": "intructor"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "disponibilidadHoraria",
+            "otherEntityName": "disponibilidadHoraria",
+            "otherEntityRelationshipName": "instructor"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "documento",
+            "otherEntityName": "cliente",
+            "otherEntityField": "numeroDocumento"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "especialidad",
+            "otherEntityName": "especialidad",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "instructor"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "vinculacion",
+            "otherEntityName": "vinculacion",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "instructor"
+        }
+    ],
+    "changelogDate": "20181205213103",
+    "entityTableName": "instructor",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

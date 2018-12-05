@@ -1,0 +1,28 @@
+{
+    "name": "ResultadosVistos",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "idFichaHasTrimestre",
+            "otherEntityName": "fichaHasTrimestre",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "resultadoAprendizaje",
+            "otherEntityName": "resultadoAprendizaje",
+            "otherEntityField": "codigoResultado"
+        }
+    ],
+    "changelogDate": "20181205213116",
+    "entityTableName": "resultados_vistos",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

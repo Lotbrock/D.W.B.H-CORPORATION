@@ -1,0 +1,67 @@
+{
+    "name": "Ficha",
+    "fields": [
+        {
+            "fieldName": "numeroFicha",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "fechaInicio",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fechaFin",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "ruta",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 40
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "fichaHasTrimestre",
+            "otherEntityName": "fichaHasTrimestre",
+            "otherEntityRelationshipName": "ficha"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "aprendiz",
+            "otherEntityName": "aprendiz",
+            "otherEntityRelationshipName": "ficha"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "estadoFicha",
+            "otherEntityName": "estadoFicha",
+            "otherEntityField": "nombreEstado"
+        }
+    ],
+    "changelogDate": "20181205213057",
+    "entityTableName": "ficha",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

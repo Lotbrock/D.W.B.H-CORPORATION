@@ -1,0 +1,46 @@
+{
+    "name": "VersionHorario",
+    "fields": [
+        {
+            "fieldName": "numeroVersion",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 50
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "ACTIVO,INACTIVO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "horario",
+            "otherEntityName": "horario",
+            "otherEntityRelationshipName": "versionHorario"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "trimestreVigente",
+            "otherEntityName": "trimestreVigente",
+            "otherEntityField": "trimestreProgramado"
+        }
+    ],
+    "changelogDate": "20181205213114",
+    "entityTableName": "version_horario",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity ResultadosVistos.
+    -->
+    <changeSet id="20181205213116-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="id_ficha_has_trimestre_id"
+                                 baseTableName="resultados_vistos"
+                                 constraintName="fk_resultados_vistos_id_ficha_has_trimestre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ficha_has_trimestre"/>
+
+        <addForeignKeyConstraint baseColumnNames="resultado_aprendizaje_id"
+                                 baseTableName="resultados_vistos"
+                                 constraintName="fk_resultados_vistos_resultado_aprendizaje_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="resultado_aprendizaje"/>
+
+    </changeSet>
+</databaseChangeLog>

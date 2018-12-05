@@ -1,0 +1,40 @@
+{
+    "name": "EstadoFicha",
+    "fields": [
+        {
+            "fieldName": "nombreEstado",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength",
+                "unique"
+            ],
+            "fieldValidateRulesMaxlength": 60
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "ACTIVO,INACTIVO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "ficha",
+            "otherEntityName": "ficha",
+            "otherEntityRelationshipName": "estadoFicha"
+        }
+    ],
+    "changelogDate": "20181205213058",
+    "entityTableName": "estado_ficha",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

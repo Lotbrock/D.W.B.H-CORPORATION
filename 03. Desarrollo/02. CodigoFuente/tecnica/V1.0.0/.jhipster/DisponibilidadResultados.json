@@ -1,0 +1,36 @@
+{
+    "name": "DisponibilidadResultados",
+    "fields": [
+        {
+            "fieldName": "anio",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "resultadoAprendizaje",
+            "otherEntityName": "resultadoAprendizaje",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "intructor",
+            "otherEntityName": "instructor",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181205213107",
+    "entityTableName": "disponibilidad_resultados",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "actividad": {
+      "home": {
+        "title": "Actividads",
+        "createLabel": "Crear nuevo Actividad",
+        "createOrEditLabel": "Crear o editar Actividad"
+      },
+      "created": "Un nuevo Actividad ha sido creado con el identificador {{ param }}",
+      "updated": "Un Actividad ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Actividad ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Actividad {{ id }}?"
+      },
+      "detail": {
+        "title": "Actividad"
+      },
+      "numeroActividad": "Numero Actividad",
+      "nombreActividad": "Nombre Actividad",
+      "planeacion": "Planeacion",
+      "fase": "Fase"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "dwbhApp": {
+    "jornada": {
+      "home": {
+        "title": "Jornadas",
+        "createLabel": "Create a new Jornada",
+        "createOrEditLabel": "Create or edit a Jornada"
+      },
+      "created": "A new Jornada is created with identifier {{ param }}",
+      "updated": "A Jornada is updated with identifier {{ param }}",
+      "deleted": "A Jornada is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Jornada {{ id }}?"
+      },
+      "detail": {
+        "title": "Jornada"
+      },
+      "siglaJornada": "Sigla Jornada",
+      "nombreJornada": "Nombre Jornada",
+      "descripcion": "Descripcion",
+      "imagenUrl": "Imagen Url",
+      "estado": "Estado",
+      "disponibilidadHoraria": "Disponibilidad Horaria",
+      "trimestre": "Trimestre"
+    }
+  }
+}

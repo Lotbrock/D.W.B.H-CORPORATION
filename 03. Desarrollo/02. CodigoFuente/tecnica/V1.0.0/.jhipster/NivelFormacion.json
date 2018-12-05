@@ -1,0 +1,46 @@
+{
+    "name": "NivelFormacion",
+    "fields": [
+        {
+            "fieldName": "nivel",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength",
+                "unique"
+            ],
+            "fieldValidateRulesMaxlength": 20
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "ACTIVO,INACTIVO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "programa",
+            "otherEntityName": "programa",
+            "otherEntityRelationshipName": "nivelFormacion"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "trimestre",
+            "otherEntityName": "trimestre",
+            "otherEntityRelationshipName": "nivelformacion"
+        }
+    ],
+    "changelogDate": "20181205213053",
+    "entityTableName": "nivel_formacion",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

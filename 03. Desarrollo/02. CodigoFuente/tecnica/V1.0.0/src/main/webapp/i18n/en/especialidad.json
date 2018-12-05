@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "especialidad": {
+      "home": {
+        "title": "Especialidads",
+        "createLabel": "Create a new Especialidad",
+        "createOrEditLabel": "Create or edit a Especialidad"
+      },
+      "created": "A new Especialidad is created with identifier {{ param }}",
+      "updated": "A Especialidad is updated with identifier {{ param }}",
+      "deleted": "A Especialidad is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Especialidad {{ id }}?"
+      },
+      "detail": {
+        "title": "Especialidad"
+      },
+      "nombreEspecialidad": "Nombre Especialidad",
+      "estado": "Estado",
+      "logoUrl": "Logo Url",
+      "instructor": "Instructor"
+    }
+  }
+}

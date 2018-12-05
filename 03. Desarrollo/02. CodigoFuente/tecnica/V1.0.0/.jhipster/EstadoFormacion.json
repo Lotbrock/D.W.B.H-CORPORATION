@@ -1,0 +1,40 @@
+{
+    "name": "EstadoFormacion",
+    "fields": [
+        {
+            "fieldName": "nombreEstado",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength",
+                "unique"
+            ],
+            "fieldValidateRulesMaxlength": 40
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "ACTIVO,INACTIVO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "aprendiz",
+            "otherEntityName": "aprendiz",
+            "otherEntityRelationshipName": "estadoFormacion"
+        }
+    ],
+    "changelogDate": "20181205213100",
+    "entityTableName": "estado_formacion",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

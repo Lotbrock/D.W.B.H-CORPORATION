@@ -1,0 +1,28 @@
+{
+  "dwbhApp": {
+    "horario": {
+      "home": {
+        "title": "Horarios",
+        "createLabel": "Crear nuevo Horario",
+        "createOrEditLabel": "Crear o editar Horario"
+      },
+      "created": "Un nuevo Horario ha sido creado con el identificador {{ param }}",
+      "updated": "Un Horario ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Horario ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Horario {{ id }}?"
+      },
+      "detail": {
+        "title": "Horario"
+      },
+      "horaInicio": "Hora Inicio",
+      "horaFin": "Hora Fin",
+      "modalidad": "Modalidad",
+      "versionHorario": "Version Horario",
+      "idAmbiente": "Id Ambiente",
+      "dia": "Dia",
+      "intructor": "Intructor",
+      "idFichaHasTrimestre": "Id Ficha Has Trimestre"
+    }
+  }
+}

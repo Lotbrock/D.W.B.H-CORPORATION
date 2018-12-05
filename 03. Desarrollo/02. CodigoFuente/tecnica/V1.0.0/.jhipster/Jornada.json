@@ -1,0 +1,67 @@
+{
+    "name": "Jornada",
+    "fields": [
+        {
+            "fieldName": "siglaJornada",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 20
+        },
+        {
+            "fieldName": "nombreJornada",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 40
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 150
+        },
+        {
+            "fieldName": "imagenUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "Estado",
+            "fieldValues": "ACTIVO,INACTIVO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "disponibilidadHoraria",
+            "otherEntityName": "disponibilidadHoraria",
+            "otherEntityRelationshipName": "jornada"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "trimestre",
+            "otherEntityName": "trimestre",
+            "otherEntityRelationshipName": "jornada"
+        }
+    ],
+    "changelogDate": "20181205213054",
+    "entityTableName": "jornada",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,27 @@
+{
+  "dwbhApp": {
+    "instructor": {
+      "home": {
+        "title": "Instructors",
+        "createLabel": "Crear nuevo Instructor",
+        "createOrEditLabel": "Crear o editar Instructor"
+      },
+      "created": "Un nuevo Instructor ha sido creado con el identificador {{ param }}",
+      "updated": "Un Instructor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Instructor ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Instructor {{ id }}?"
+      },
+      "detail": {
+        "title": "Instructor"
+      },
+      "estado": "Estado",
+      "horario": "Horario",
+      "disponibilidadResultados": "Disponibilidad Resultados",
+      "disponibilidadHoraria": "Disponibilidad Horaria",
+      "documento": "Documento",
+      "especialidad": "Especialidad",
+      "vinculacion": "Vinculacion"
+    }
+  }
+}

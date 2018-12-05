@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "nivelFormacion": {
+      "home": {
+        "title": "Nivel Formacions",
+        "createLabel": "Crear nuevo Nivel Formacion",
+        "createOrEditLabel": "Crear o editar Nivel Formacion"
+      },
+      "created": "Un nuevo Nivel Formacion ha sido creado con el identificador {{ param }}",
+      "updated": "Un Nivel Formacion ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Nivel Formacion ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Nivel Formacion {{ id }}?"
+      },
+      "detail": {
+        "title": "Nivel Formacion"
+      },
+      "nivel": "Nivel",
+      "estado": "Estado",
+      "programa": "Programa",
+      "trimestre": "Trimestre"
+    }
+  }
+}

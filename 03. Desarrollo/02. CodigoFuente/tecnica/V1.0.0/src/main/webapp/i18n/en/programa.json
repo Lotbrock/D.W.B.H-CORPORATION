@@ -1,0 +1,27 @@
+{
+  "dwbhApp": {
+    "programa": {
+      "home": {
+        "title": "Programas",
+        "createLabel": "Create a new Programa",
+        "createOrEditLabel": "Create or edit a Programa"
+      },
+      "created": "A new Programa is created with identifier {{ param }}",
+      "updated": "A Programa is updated with identifier {{ param }}",
+      "deleted": "A Programa is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Programa {{ id }}?"
+      },
+      "detail": {
+        "title": "Programa"
+      },
+      "codigo": "Codigo",
+      "version": "Version",
+      "nombre": "Nombre",
+      "sigla": "Sigla",
+      "estado": "Estado",
+      "competencia": "Competencia",
+      "nivelFormacion": "Nivel Formacion"
+    }
+  }
+}

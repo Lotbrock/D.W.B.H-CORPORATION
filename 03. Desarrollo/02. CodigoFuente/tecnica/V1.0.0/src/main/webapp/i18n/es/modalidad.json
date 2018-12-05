@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "modalidad": {
+      "home": {
+        "title": "Modalidads",
+        "createLabel": "Crear nuevo Modalidad",
+        "createOrEditLabel": "Crear o editar Modalidad"
+      },
+      "created": "Un nuevo Modalidad ha sido creado con el identificador {{ param }}",
+      "updated": "Un Modalidad ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Modalidad ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Modalidad {{ id }}?"
+      },
+      "detail": {
+        "title": "Modalidad"
+      },
+      "nombreModalidad": "Nombre Modalidad",
+      "color": "Color",
+      "estado": "Estado",
+      "horario": "Horario"
+    }
+  }
+}

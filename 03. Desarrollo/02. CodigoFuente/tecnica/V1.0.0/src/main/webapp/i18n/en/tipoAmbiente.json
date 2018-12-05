@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "tipoAmbiente": {
+      "home": {
+        "title": "Tipo Ambientes",
+        "createLabel": "Create a new Tipo Ambiente",
+        "createOrEditLabel": "Create or edit a Tipo Ambiente"
+      },
+      "created": "A new Tipo Ambiente is created with identifier {{ param }}",
+      "updated": "A Tipo Ambiente is updated with identifier {{ param }}",
+      "deleted": "A Tipo Ambiente is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tipo Ambiente {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Ambiente"
+      },
+      "tipo": "Tipo",
+      "descripcion": "Descripcion",
+      "estado": "Estado",
+      "ambiente": "Ambiente"
+    }
+  }
+}

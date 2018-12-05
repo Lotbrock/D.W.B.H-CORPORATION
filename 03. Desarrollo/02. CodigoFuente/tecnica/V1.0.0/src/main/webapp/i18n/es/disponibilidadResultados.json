@@ -1,0 +1,23 @@
+{
+  "dwbhApp": {
+    "disponibilidadResultados": {
+      "home": {
+        "title": "Disponibilidad Resultados",
+        "createLabel": "Crear nuevo Disponibilidad Resultados",
+        "createOrEditLabel": "Crear o editar Disponibilidad Resultados"
+      },
+      "created": "Un nuevo Disponibilidad Resultados ha sido creado con el identificador {{ param }}",
+      "updated": "Un Disponibilidad Resultados ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Disponibilidad Resultados ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Disponibilidad Resultados {{ id }}?"
+      },
+      "detail": {
+        "title": "Disponibilidad Resultados"
+      },
+      "anio": "Anio",
+      "resultadoAprendizaje": "Resultado Aprendizaje",
+      "intructor": "Intructor"
+    }
+  }
+}
