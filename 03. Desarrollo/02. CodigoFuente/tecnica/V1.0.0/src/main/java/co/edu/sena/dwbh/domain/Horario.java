@@ -56,6 +56,7 @@ public class Horario implements Serializable {
     private Instructor intructor;
 
     @ManyToOne
+    @NotNull
     @JsonIgnoreProperties("horarios")
     private FichaHasTrimestre idFichaHasTrimestre;
 

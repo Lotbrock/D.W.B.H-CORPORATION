@@ -27,6 +27,7 @@ public class DisponibilidadResultados implements Serializable {
     private LocalDate anio;
 
     @ManyToOne
+    @NotNull
     @JsonIgnoreProperties("disponibilidadResultados")
     private ResultadoAprendizaje resultadoAprendizaje;
 

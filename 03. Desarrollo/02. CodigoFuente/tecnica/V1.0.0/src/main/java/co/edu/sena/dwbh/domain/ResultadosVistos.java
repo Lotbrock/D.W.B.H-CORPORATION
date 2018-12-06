@@ -22,6 +22,7 @@ public class ResultadosVistos implements Serializable {
     private Long id;
 
     @ManyToOne
+    @NotNull
     @JsonIgnoreProperties("resultadosVistos")
     private FichaHasTrimestre idFichaHasTrimestre;
 

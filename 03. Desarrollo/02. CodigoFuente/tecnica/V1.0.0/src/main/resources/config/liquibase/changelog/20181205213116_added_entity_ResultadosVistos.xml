@@ -23,7 +23,7 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="id_ficha_has_trimestre_id" type="bigint">
-                <constraints nullable="true" />
+                <constraints nullable="false"/>
             </column>
 
             <column name="resultado_aprendizaje_id" type="bigint">
