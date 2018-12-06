@@ -12,6 +12,8 @@ export interface ICliente {
   aprendizs?: IAprendiz[];
   tipoDocumentoSigla?: string;
   tipoDocumentoId?: number;
+  userLogin?: string;
+  userId?: number;
 }
 
 export const defaultValue: Readonly<ICliente> = {};

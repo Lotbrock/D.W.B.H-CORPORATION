@@ -62,6 +62,10 @@ export class ClienteDetail extends React.Component<IClienteDetailProps> {
               <Translate contentKey="dwbhApp.cliente.tipoDocumento">Tipo Documento</Translate>
             </dt>
             <dd>{clienteEntity.tipoDocumentoSigla ? clienteEntity.tipoDocumentoSigla : ''}</dd>
+            <dt>
+              <Translate contentKey="dwbhApp.cliente.user">User</Translate>
+            </dt>
+            <dd>{clienteEntity.userLogin ? clienteEntity.userLogin : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/cliente" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}

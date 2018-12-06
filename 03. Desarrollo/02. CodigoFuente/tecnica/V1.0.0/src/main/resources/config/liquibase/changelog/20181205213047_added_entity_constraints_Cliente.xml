@@ -14,5 +14,11 @@
                                  referencedColumnNames="id"
                                  referencedTableName="tipo_documento"/>
 
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="cliente"
+                                 constraintName="fk_cliente_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="usuario"/>
+
     </changeSet>
 </databaseChangeLog>

@@ -13,10 +13,6 @@ import password, { PasswordState } from 'app/modules/account/password/password.r
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
 // prettier-ignore
-import cliente, {
-  ClienteState
-} from 'app/entities/cliente/cliente.reducer';
-// prettier-ignore
 import proyecto, {
   ProyectoState
 } from 'app/entities/proyecto/proyecto.reducer';
@@ -140,6 +136,10 @@ import fichaHasTrimestre, {
 import horario, {
   HorarioState
 } from 'app/entities/horario/horario.reducer';
+// prettier-ignore
+import cliente, {
+  ClienteState
+} from 'app/entities/cliente/cliente.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {

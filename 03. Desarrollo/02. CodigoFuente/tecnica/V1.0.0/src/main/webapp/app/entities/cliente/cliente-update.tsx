@@ -10,6 +10,8 @@ import { IRootState } from 'app/shared/reducers';
 
 import { ITipoDocumento } from 'app/shared/model/tipo-documento.model';
 import { getEntities as getTipoDocumentos } from 'app/entities/tipo-documento/tipo-documento.reducer';
+import {IUser} from 'app/shared/model/user.model';
+import {getUsers} from 'app/modules/administration/user-management/user-management.reducer';
 import { getEntity, updateEntity, createEntity, reset } from './cliente.reducer';
 import { ICliente } from 'app/shared/model/cliente.model';
 // tslint:disable-next-line:no-unused-variable
@@ -21,6 +23,7 @@ export interface IClienteUpdateProps extends StateProps, DispatchProps, RouteCom
 export interface IClienteUpdateState {
   isNew: boolean;
   tipoDocumentoId: string;
+  userId: string;
 }
 
 export class ClienteUpdate extends React.Component<IClienteUpdateProps, IClienteUpdateState> {
@@ -28,6 +31,7 @@ export class ClienteUpdate extends React.Component<IClienteUpdateProps, ICliente
     super(props);
     this.state = {
       tipoDocumentoId: '0',
+      userId: '0',
       isNew: !this.props.match.params || !this.props.match.params.id
     };
   }
@@ -46,6 +50,7 @@ export class ClienteUpdate extends React.Component<IClienteUpdateProps, ICliente
     }
 
     this.props.getTipoDocumentos();
+    this.props.getUsers();
   }
 
   saveEntity = (event, errors, values) => {
@@ -69,7 +74,7 @@ export class ClienteUpdate extends React.Component<IClienteUpdateProps, ICliente
   };
 
   render() {
-    const { clienteEntity, tipoDocumentos, loading, updating } = this.props;
+    const {clienteEntity, tipoDocumentos, users, loading, updating} = this.props;
     const { isNew } = this.state;
 
     return (
@@ -177,6 +182,20 @@ export class ClienteUpdate extends React.Component<IClienteUpdateProps, ICliente
                       : null}
                   </AvInput>
                 </AvGroup>
+                <AvGroup>
+                  <Label for="user.login">
+                    <Translate contentKey="dwbhApp.cliente.user">User</Translate>
+                  </Label>
+                  <AvInput id="cliente-user" type="select" className="form-control" name="userId">
+                    {users
+                      ? users.map(otherEntity => (
+                        <option value={otherEntity.id} key={otherEntity.id}>
+                          {otherEntity.login}
+                        </option>
+                      ))
+                      : null}
+                  </AvInput>
+                </AvGroup>
                 <Button tag={Link} id="cancel-save" to="/entity/cliente" replace color="info">
                   <FontAwesomeIcon icon="arrow-left" />&nbsp;
                   <span className="d-none d-md-inline">
@@ -199,6 +218,7 @@ export class ClienteUpdate extends React.Component<IClienteUpdateProps, ICliente
 
 const mapStateToProps = (storeState: IRootState) => ({
   tipoDocumentos: storeState.tipoDocumento.entities,
+  users: storeState.userManagement.users,
   clienteEntity: storeState.cliente.entity,
   loading: storeState.cliente.loading,
   updating: storeState.cliente.updating,
@@ -207,6 +227,7 @@ const mapStateToProps = (storeState: IRootState) => ({
 
 const mapDispatchToProps = {
   getTipoDocumentos,
+  getUsers,
   getEntity,
   updateEntity,
   createEntity,

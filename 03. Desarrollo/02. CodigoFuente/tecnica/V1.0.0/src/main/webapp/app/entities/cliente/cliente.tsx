@@ -55,6 +55,9 @@ export class Cliente extends React.Component<IClienteProps> {
                 <th>
                   <Translate contentKey="dwbhApp.cliente.tipoDocumento">Tipo Documento</Translate>
                 </th>
+                <th>
+                  <Translate contentKey="dwbhApp.cliente.user">User</Translate>
+                </th>
                 <th />
               </tr>
             </thead>
@@ -78,6 +81,7 @@ export class Cliente extends React.Component<IClienteProps> {
                       ''
                     )}
                   </td>
+                  <td>{cliente.userLogin ? cliente.userLogin : ''}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`${match.url}/${cliente.id}`} color="info" size="sm">

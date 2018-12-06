@@ -4,6 +4,7 @@ import co.edu.sena.dwbh.DwbhApp;
 
 import co.edu.sena.dwbh.domain.Cliente;
 import co.edu.sena.dwbh.domain.TipoDocumento;
+import co.edu.sena.dwbh.domain.User;
 import co.edu.sena.dwbh.repository.ClienteRepository;
 import co.edu.sena.dwbh.service.ClienteService;
 import co.edu.sena.dwbh.service.dto.ClienteDTO;
@@ -112,6 +113,11 @@ public class ClienteResourceIntTest {
         em.persist(tipoDocumento);
         em.flush();
         cliente.setTipoDocumento(tipoDocumento);
+        // Add required entity
+        User user = UserResourceIntTest.createEntity(em);
+        em.persist(user);
+        em.flush();
+        cliente.setUser(user);
         return cliente;
     }
 

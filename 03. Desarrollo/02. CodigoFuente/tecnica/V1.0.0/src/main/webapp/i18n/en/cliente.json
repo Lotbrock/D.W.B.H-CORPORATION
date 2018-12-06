@@ -22,7 +22,8 @@
       "segundoApellido": "Segundo Apellido",
       "instructor": "Instructor",
       "aprendiz": "Aprendiz",
-      "tipoDocumento": "Tipo Documento"
+      "tipoDocumento": "Tipo Documento",
+      "user": "User"
     }
   }
 }

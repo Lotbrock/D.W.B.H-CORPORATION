@@ -8,16 +8,19 @@ import org.mapstruct.*;
 /**
  * Mapper for the entity Cliente and its DTO ClienteDTO.
  */
-@Mapper(componentModel = "spring", uses = {TipoDocumentoMapper.class})
+@Mapper(componentModel = "spring", uses = {TipoDocumentoMapper.class, UserMapper.class})
 public interface ClienteMapper extends EntityMapper<ClienteDTO, Cliente> {
 
     @Mapping(source = "tipoDocumento.id", target = "tipoDocumentoId")
     @Mapping(source = "tipoDocumento.sigla", target = "tipoDocumentoSigla")
+    @Mapping(source = "user.id", target = "userId")
+    @Mapping(source = "user.login", target = "userLogin")
     ClienteDTO toDto(Cliente cliente);
 
     @Mapping(target = "instructors", ignore = true)
     @Mapping(target = "aprendizs", ignore = true)
     @Mapping(source = "tipoDocumentoId", target = "tipoDocumento")
+    @Mapping(source = "userId", target = "user")
     Cliente toEntity(ClienteDTO clienteDTO);
 
     default Cliente fromId(Long id) {
