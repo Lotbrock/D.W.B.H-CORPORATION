@@ -13,6 +13,9 @@
                                  constraintName="fk_version_horario_trimestre_vigente_id"
                                  referencedColumnNames="id"
                                  referencedTableName="trimestre_vigente"/>
+        <addUniqueConstraint tableName="version_horario"
+                             columnNames="numero_version, trimestre_vigente_id"
+                             constraintName="uni_principal"/>
 
     </changeSet>
 </databaseChangeLog>
