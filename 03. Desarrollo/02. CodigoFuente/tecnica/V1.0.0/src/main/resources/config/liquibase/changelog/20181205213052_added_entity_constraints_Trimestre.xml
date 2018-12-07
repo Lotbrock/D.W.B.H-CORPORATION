@@ -20,5 +20,11 @@
                                  referencedColumnNames="id"
                                  referencedTableName="nivel_formacion"/>
 
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="trimestre"
+                             columnNames="jornada_id, nivelformacion_id"
+                             constraintName="uni_principal"/>
+
+
     </changeSet>
 </databaseChangeLog>
