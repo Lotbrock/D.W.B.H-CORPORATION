@@ -25,5 +25,10 @@
                                  referencedColumnNames="id"
                                  referencedTableName="fase"/>
 
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="actividad"
+                             columnNames="numero_actividad, fase_id"
+                             constraintName="uni_principal"/>
+
     </changeSet>
 </databaseChangeLog>

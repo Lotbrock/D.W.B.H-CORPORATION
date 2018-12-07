@@ -18,6 +18,5 @@
                                  constraintName="fk_planeacion_trimestre_trimestres_id"
                                  referencedColumnNames="id"
                                  referencedTableName="trimestre"/>
-        
     </changeSet>
 </databaseChangeLog>
