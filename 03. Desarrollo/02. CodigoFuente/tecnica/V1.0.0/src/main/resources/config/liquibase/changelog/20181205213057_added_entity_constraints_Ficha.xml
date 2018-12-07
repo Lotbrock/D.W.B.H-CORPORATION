@@ -14,5 +14,10 @@
                                  referencedColumnNames="id"
                                  referencedTableName="estado_ficha"/>
 
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="ficha"
+                             columnNames="numero_ficha, estado_ficha_id"
+                             constraintName="uni_principal"/>
+
     </changeSet>
 </databaseChangeLog>
