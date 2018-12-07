@@ -44,6 +44,10 @@
 
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
         </createTable>
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="trimestre_vigente"
+                             columnNames="anio, trimestre_programado"
+                             constraintName="uni_principal"/>
         
     </changeSet>
     <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
