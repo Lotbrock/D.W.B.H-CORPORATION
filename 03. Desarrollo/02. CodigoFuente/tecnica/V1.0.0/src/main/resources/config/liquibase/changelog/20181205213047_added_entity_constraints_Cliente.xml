@@ -19,6 +19,9 @@
                                  constraintName="fk_cliente_user_id"
                                  referencedColumnNames="id"
                                  referencedTableName="usuario"/>
+        <addUniqueConstraint tableName="cliente"
+                             columnNames="tipo_documento_id, user_id, numero_documento"
+                             constraintName="uni_principal"/>
 
     </changeSet>
 </databaseChangeLog>
