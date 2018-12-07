@@ -14,5 +14,11 @@
                                  referencedColumnNames="id"
                                  referencedTableName="nivel_formacion"/>
 
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="programa"
+                             columnNames="codigo, version, nivel_formacion_id"
+                             constraintName="uni_principal"/>
+
+
     </changeSet>
 </databaseChangeLog>
