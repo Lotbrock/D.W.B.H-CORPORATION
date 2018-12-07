@@ -44,5 +44,10 @@
                                  referencedColumnNames="id"
                                  referencedTableName="ficha_has_trimestre"/>
 
+        <addUniqueConstraint tableName="horario"
+                             columnNames="modalidad_id, hora_inicio, version_horario_id, id_ambiente_id, dia_id, intructor_id, id_ficha_has_trimestre_id"
+                             constraintName="uni_principal"/>
+
+
     </changeSet>
 </databaseChangeLog>
