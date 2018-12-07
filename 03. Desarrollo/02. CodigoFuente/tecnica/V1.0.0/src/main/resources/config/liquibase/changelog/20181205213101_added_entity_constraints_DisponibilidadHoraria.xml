@@ -25,6 +25,9 @@
                                  constraintName="fk_disponibilidad_horaria_dia_id"
                                  referencedColumnNames="id"
                                  referencedTableName="dia"/>
+        <addUniqueConstraint tableName="disponibilidad_horaria"
+                             columnNames="anio, hora_inicio, instructor_id, jornada_id, dia_id"
+                             constraintName="uni_principal"/>
 
     </changeSet>
 </databaseChangeLog>
