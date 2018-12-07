@@ -19,6 +19,11 @@
                                  constraintName="fk_ambiente_sede_id"
                                  referencedColumnNames="id"
                                  referencedTableName="sede"/>
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="ambiente"
+                             columnNames="sede_id, numero_ambiente"
+                             constraintName="uni_principal"/>
+
 
     </changeSet>
 </databaseChangeLog>
