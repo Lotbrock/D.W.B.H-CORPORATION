@@ -20,5 +20,10 @@
                                  referencedColumnNames="id"
                                  referencedTableName="instructor"/>
 
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="disponibilidad_resultados"
+                             columnNames="anio, intructor_id, resultado_aprendizaje_id"
+                             constraintName="uni_principal"/>
+
     </changeSet>
 </databaseChangeLog>
