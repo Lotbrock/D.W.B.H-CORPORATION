@@ -38,7 +38,7 @@ spring:
         restart:
             enabled: true
         livereload:
-            enabled: false # we use Webpack dev server + BrowserSync for livereload
+            enabled: true # we use Webpack dev server + BrowserSync for livereload
     jackson:
         serialization:
             indent-output: true
@@ -46,7 +46,7 @@ spring:
         type: com.zaxxer.hikari.HikariDataSource
         url: jdbc:mysql://localhost:4306/dwbh?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&useTimezone=true&serverTimezone=UTC
         username: root
-        password: 123456789
+        password: 12345
         hikari:
             auto-commit: false
             data-source-properties:
