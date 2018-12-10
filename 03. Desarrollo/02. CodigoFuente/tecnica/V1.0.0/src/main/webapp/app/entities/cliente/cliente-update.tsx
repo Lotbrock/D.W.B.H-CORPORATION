@@ -10,8 +10,8 @@ import { IRootState } from 'app/shared/reducers';
 
 import { ITipoDocumento } from 'app/shared/model/tipo-documento.model';
 import { getEntities as getTipoDocumentos } from 'app/entities/tipo-documento/tipo-documento.reducer';
-import {IUser} from 'app/shared/model/user.model';
-import {getUsers} from 'app/modules/administration/user-management/user-management.reducer';
+import { IUser } from 'app/shared/model/user.model';
+import { getUsers } from 'app/modules/administration/user-management/user-management.reducer';
 import { getEntity, updateEntity, createEntity, reset } from './cliente.reducer';
 import { ICliente } from 'app/shared/model/cliente.model';
 // tslint:disable-next-line:no-unused-variable
@@ -74,7 +74,7 @@ export class ClienteUpdate extends React.Component<IClienteUpdateProps, ICliente
   };
 
   render() {
-    const {clienteEntity, tipoDocumentos, users, loading, updating} = this.props;
+    const { clienteEntity, tipoDocumentos, users, loading, updating } = this.props;
     const { isNew } = this.state;
 
     return (

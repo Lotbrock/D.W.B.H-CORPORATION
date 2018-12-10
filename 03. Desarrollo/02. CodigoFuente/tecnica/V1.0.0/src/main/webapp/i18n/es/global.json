@@ -1,6 +1,6 @@
 {
   "global": {
-    "title": "Dwbh",
+    "title": "D.W.B.H",
     "browsehappy":
       "Está usando un navegador <strong>no actualizado</strong>. Por favor, <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
     "menu": {
@@ -165,5 +165,5 @@
     "idexists": "A new {{entityName}} cannot already have an ID",
     "idnull": "Invalid ID"
   },
-  "footer": "pie de página"
+  "footer": "D.W.B.H"
 }
