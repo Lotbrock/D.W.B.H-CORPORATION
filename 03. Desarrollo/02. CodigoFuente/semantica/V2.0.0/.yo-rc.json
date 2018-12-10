@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "co.edu.sena.dwbhcorporation"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "monolith",
+    "baseName": "D_W_B_H_Corporation",
+    "packageName": "co.edu.sena.dwbhcorporation",
+    "packageFolder": "co/edu/sena/dwbhcorporation",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NGVmOGE3MTNiZjE1MTU4ODY3ZTQ5NDdlNzY1NDZkODgwNzg2ZmY5M2IzYTE0ZmI5NmM1OWQ5OGQwM2Q4YmJjZTQ4YzQyMDRhYjA4ZTZiYTE5MTViMDdjOWVjY2E1Y2MxZWEyZDZiMWQ2MmVmYWQzZTExNjViMGZhOGI5OWU1NGY=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}

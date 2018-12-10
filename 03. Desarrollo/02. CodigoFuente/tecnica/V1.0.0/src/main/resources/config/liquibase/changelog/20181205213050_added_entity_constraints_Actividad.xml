@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Actividad.
+    -->
+    <changeSet id="20181205213050-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="actividads_id"
+                                 baseTableName="actividad_planeacion"
+                                 constraintName="fk_actividad_planeacion_actividads_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="actividad"/>
+        <addForeignKeyConstraint baseColumnNames="planeacions_id"
+                                 baseTableName="actividad_planeacion"
+                                 constraintName="fk_actividad_planeacion_planeacions_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="planeacion"/>
+        
+        <addForeignKeyConstraint baseColumnNames="fase_id"
+                                 baseTableName="actividad"
+                                 constraintName="fk_actividad_fase_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="fase"/>
+
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="actividad"
+                             columnNames="numero_actividad, fase_id"
+                             constraintName="uni_principal"/>
+
+    </changeSet>
+</databaseChangeLog>

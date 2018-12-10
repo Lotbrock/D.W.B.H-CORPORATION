@@ -1,0 +1,26 @@
+{
+  "dwbhApp": {
+    "resultadoAprendizaje": {
+      "home": {
+        "title": "Resultado Aprendizajes",
+        "createLabel": "Crear nuevo Resultado Aprendizaje",
+        "createOrEditLabel": "Crear o editar Resultado Aprendizaje"
+      },
+      "created": "Un nuevo Resultado Aprendizaje ha sido creado con el identificador {{ param }}",
+      "updated": "Un Resultado Aprendizaje ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Resultado Aprendizaje ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Resultado Aprendizaje {{ id }}?"
+      },
+      "detail": {
+        "title": "Resultado Aprendizaje"
+      },
+      "codigoResultado": "Codigo Resultado",
+      "descripcion": "Descripcion",
+      "resultadosVistos": "Resultados Vistos",
+      "limitacionAmbiente": "Limitacion Ambiente",
+      "disponibilidadResultados": "Disponibilidad Resultados",
+      "competencia": "Competencia"
+    }
+  }
+}

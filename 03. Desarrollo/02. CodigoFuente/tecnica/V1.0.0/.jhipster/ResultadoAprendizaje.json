@@ -1,0 +1,59 @@
+{
+    "name": "ResultadoAprendizaje",
+    "fields": [
+        {
+            "fieldName": "codigoResultado",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 40
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 600
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "resultadosVistos",
+            "otherEntityName": "resultadosVistos",
+            "otherEntityRelationshipName": "resultadoAprendizaje"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "limitacionAmbiente",
+            "otherEntityName": "limitacionAmbiente",
+            "otherEntityRelationshipName": "resultadoAprendizaje"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "disponibilidadResultados",
+            "otherEntityName": "disponibilidadResultados",
+            "otherEntityRelationshipName": "resultadoAprendizaje"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "competencia",
+            "otherEntityName": "competencia",
+            "otherEntityField": "codigoCompetencia"
+        }
+    ],
+    "changelogDate": "20181205213108",
+    "entityTableName": "resultado_aprendizaje",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

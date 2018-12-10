@@ -1,0 +1,41 @@
+{
+    "name": "FichaHasTrimestre",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "horario",
+            "otherEntityName": "horario",
+            "otherEntityRelationshipName": "idFichaHasTrimestre"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "resultadosVistos",
+            "otherEntityName": "resultadosVistos",
+            "otherEntityRelationshipName": "idFichaHasTrimestre"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "trimestre",
+            "otherEntityName": "trimestre",
+            "otherEntityField": "nombreTrimestre"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "ficha",
+            "otherEntityName": "ficha",
+            "otherEntityField": "numeroFicha"
+        }
+    ],
+    "changelogDate": "20181205213117",
+    "entityTableName": "ficha_has_trimestre",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

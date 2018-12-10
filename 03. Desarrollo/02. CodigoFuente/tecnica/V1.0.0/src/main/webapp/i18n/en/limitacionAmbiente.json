@@ -1,0 +1,22 @@
+{
+  "dwbhApp": {
+    "limitacionAmbiente": {
+      "home": {
+        "title": "Limitacion Ambientes",
+        "createLabel": "Create a new Limitacion Ambiente",
+        "createOrEditLabel": "Create or edit a Limitacion Ambiente"
+      },
+      "created": "A new Limitacion Ambiente is created with identifier {{ param }}",
+      "updated": "A Limitacion Ambiente is updated with identifier {{ param }}",
+      "deleted": "A Limitacion Ambiente is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Limitacion Ambiente {{ id }}?"
+      },
+      "detail": {
+        "title": "Limitacion Ambiente"
+      },
+      "ambiente": "Ambiente",
+      "resultadoAprendizaje": "Resultado Aprendizaje"
+    }
+  }
+}

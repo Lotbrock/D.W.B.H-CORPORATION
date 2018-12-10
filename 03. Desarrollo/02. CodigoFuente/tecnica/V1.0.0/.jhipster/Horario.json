@@ -1,0 +1,71 @@
+{
+    "name": "Horario",
+    "fields": [
+        {
+            "fieldName": "horaInicio",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "horaFin",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "modalidad",
+            "otherEntityName": "modalidad",
+            "otherEntityField": "nombreModalidad"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "versionHorario",
+            "otherEntityName": "versionHorario",
+            "otherEntityField": "numeroVersion"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "idAmbiente",
+            "otherEntityName": "ambiente",
+            "otherEntityField": "numeroAmbiente"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "dia",
+            "otherEntityName": "dia",
+            "otherEntityField": "nombreDia"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "intructor",
+            "otherEntityName": "instructor",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "idFichaHasTrimestre",
+            "otherEntityName": "fichaHasTrimestre",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181205213118",
+    "entityTableName": "horario",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "co.edu.sena.dwbh",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "monolith",
+    "baseName": "dwbh",
+    "packageName": "co.edu.sena.dwbh",
+    "packageFolder": "co/edu/sena/dwbh",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZDhhZGJkMzRmMjc2Zjk5NTkwMTdmZDE1ZTUwYzkyODc4ODAyYTdiNGFjMjdhYmMyNmY5M2FhNmJkMmVkNWQ4Yzk0YTJlNzU4ZTVmMGE4ZmE4YmJkZDg3MDE5MWUwNWU3OWI5NDZjYWM0NGM1MDQ3OGM4ZmFmZjMxMTY0ZDNiYzI=",
+    "clientFramework": "react",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": [
+      "es",
+      "en"
+    ]
+  }
+}

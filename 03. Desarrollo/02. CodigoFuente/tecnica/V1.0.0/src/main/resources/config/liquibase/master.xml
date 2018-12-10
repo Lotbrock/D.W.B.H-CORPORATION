@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213047_added_entity_Cliente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213048_added_entity_Proyecto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213049_added_entity_Fase.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213050_added_entity_Actividad.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213051_added_entity_Planeacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213052_added_entity_Trimestre.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213053_added_entity_NivelFormacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213054_added_entity_Jornada.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213055_added_entity_Programa.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213056_added_entity_Competencia.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213057_added_entity_Ficha.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213058_added_entity_EstadoFicha.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213059_added_entity_Aprendiz.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213100_added_entity_EstadoFormacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213101_added_entity_DisponibilidadHoraria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213102_added_entity_Dia.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213103_added_entity_Instructor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213104_added_entity_Especialidad.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213105_added_entity_Vinculacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213106_added_entity_TipoDocumento.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213107_added_entity_DisponibilidadResultados.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213108_added_entity_ResultadoAprendizaje.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213109_added_entity_LimitacionAmbiente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213110_added_entity_Ambiente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213111_added_entity_Sede.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213112_added_entity_TipoAmbiente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213113_added_entity_TrimestreVigente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213114_added_entity_VersionHorario.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213115_added_entity_Modalidad.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213116_added_entity_ResultadosVistos.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213117_added_entity_FichaHasTrimestre.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213118_added_entity_Horario.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20181205213047_added_entity_constraints_Cliente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213049_added_entity_constraints_Fase.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213050_added_entity_constraints_Actividad.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213051_added_entity_constraints_Planeacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213052_added_entity_constraints_Trimestre.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213055_added_entity_constraints_Programa.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213056_added_entity_constraints_Competencia.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213057_added_entity_constraints_Ficha.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213059_added_entity_constraints_Aprendiz.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213101_added_entity_constraints_DisponibilidadHoraria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213103_added_entity_constraints_Instructor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213104_added_entity_constraints_Especialidad.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213105_added_entity_constraints_Vinculacion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213107_added_entity_constraints_DisponibilidadResultados.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213108_added_entity_constraints_ResultadoAprendizaje.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213109_added_entity_constraints_LimitacionAmbiente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213110_added_entity_constraints_Ambiente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213114_added_entity_constraints_VersionHorario.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213116_added_entity_constraints_ResultadosVistos.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213117_added_entity_constraints_FichaHasTrimestre.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181205213118_added_entity_constraints_Horario.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

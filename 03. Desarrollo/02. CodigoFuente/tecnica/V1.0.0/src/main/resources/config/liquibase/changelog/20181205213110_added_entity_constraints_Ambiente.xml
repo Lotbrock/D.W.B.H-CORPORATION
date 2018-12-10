@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Ambiente.
+    -->
+    <changeSet id="20181205213110-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="tipo_ambiente_id"
+                                 baseTableName="ambiente"
+                                 constraintName="fk_ambiente_tipo_ambiente_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tipo_ambiente"/>
+
+        <addForeignKeyConstraint baseColumnNames="sede_id"
+                                 baseTableName="ambiente"
+                                 constraintName="fk_ambiente_sede_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sede"/>
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="ambiente"
+                             columnNames="sede_id, numero_ambiente"
+                             constraintName="uni_principal"/>
+
+
+    </changeSet>
+</databaseChangeLog>

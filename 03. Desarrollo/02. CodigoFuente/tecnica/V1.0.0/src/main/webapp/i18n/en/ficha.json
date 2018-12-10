@@ -1,0 +1,27 @@
+{
+  "dwbhApp": {
+    "ficha": {
+      "home": {
+        "title": "Fichas",
+        "createLabel": "Create a new Ficha",
+        "createOrEditLabel": "Create or edit a Ficha"
+      },
+      "created": "A new Ficha is created with identifier {{ param }}",
+      "updated": "A Ficha is updated with identifier {{ param }}",
+      "deleted": "A Ficha is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ficha {{ id }}?"
+      },
+      "detail": {
+        "title": "Ficha"
+      },
+      "numeroFicha": "Numero Ficha",
+      "fechaInicio": "Fecha Inicio",
+      "fechaFin": "Fecha Fin",
+      "ruta": "Ruta",
+      "fichaHasTrimestre": "Ficha Has Trimestre",
+      "aprendiz": "Aprendiz",
+      "estadoFicha": "Estado Ficha"
+    }
+  }
+}

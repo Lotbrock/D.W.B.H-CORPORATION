@@ -1,0 +1,255 @@
+enum Estado{
+ACTIVO, INACTIVO
+}
+entity Cliente{
+numeroDocumento String required maxlength(50),
+primerNombre String required maxlength(50),
+segundoNombre String maxlength(50),
+primerApellido String required maxlength(50),
+segundoApellido String maxlength(50)
+}
+entity Proyecto{
+codigo String required maxlength(40) unique,
+nombre String required,
+estado Estado required
+}
+entity Fase{
+nombre String required,
+estado Estado required
+}
+entity Actividad{
+numeroActividad Integer required,
+nombreActividad String required
+}
+entity Planeacion{
+codigoPlaneacfion String required maxlength(50) unique,
+estado Estado required
+}
+entity Trimestre{
+nombreTrimestre String required maxlength(40)
+}
+entity NivelFormacion{
+nivel String required maxlength(20) unique,
+estado Estado required
+}
+entity Jornada{
+siglaJornada String required maxlength(20),
+nombreJornada String required maxlength(40),
+descripcion String required maxlength(150),
+imagenUrl String,
+estado Estado required
+}
+entity Programa{
+codigo String required maxlength(50),
+version String required maxlength(40),
+nombre String required,
+sigla String required maxlength(40),
+estado Estado required
+}
+entity Competencia{
+codigoCompetencia String required maxlength(50),
+descripcion String required
+}
+entity Ficha{
+numeroFicha String required maxlength(100),
+fechaInicio LocalDate required,
+fechaFin LocalDate required,
+ruta String required maxlength(40)
+}
+entity EstadoFicha{
+nombreEstado String required maxlength(60) unique,
+estado Estado required
+}
+entity Aprendiz
+entity EstadoFormacion{
+nombreEstado String required maxlength(40) unique,
+estado Estado required
+}
+entity DisponibilidadHoraria{
+anio LocalDate required,
+horaInicio ZonedDateTime required,
+horaFin ZonedDateTime required
+}
+entity Dia{
+nombreDia String required maxlength(40) unique,
+estado Estado required
+}
+entity Instructor{
+estado Estado required
+}
+entity Especialidad{
+nombreEspecialidad String required maxlength(40) unique,
+estado Estado required,
+logoUrl String
+}
+entity Vinculacion{
+tipoVinculacion String required maxlength(60) unique,
+horas Integer required,
+estado Estado required
+}
+entity TipoDocumento{
+sigla String required maxlength(10) unique,
+nombreDocumento String required,
+estado Estado required
+}
+entity DisponibilidadResultados{
+anio LocalDate required
+}
+entity ResultadoAprendizaje{
+codigoResultado String required maxlength(40),
+descripcion String required maxlength(600)
+}
+entity LimitacionAmbiente
+entity Ambiente{
+numeroAmbiente String required maxlength(50),
+descripcion String required maxlength(600),
+estado Estado required
+}
+entity Sede{
+nombreSede String required maxlength(50) unique,
+direccion String required,
+estado Estado required
+}
+entity TipoAmbiente{
+tipo String required maxlength(50) unique,
+descripcion String required maxlength(600),
+estado Estado required
+}
+entity TrimestreVigente{
+anio LocalDate required,
+trimestreProgramado Integer required,
+fechaInicio LocalDate required,
+fechaFin LocalDate required,
+estado Estado required
+}
+entity VersionHorario{
+numeroVersion String required maxlength(50),
+estado Estado required
+}
+entity Modalidad{
+nombreModalidad String required maxlength(50) unique,
+color String required maxlength(40),
+estado Estado required
+}
+entity ResultadosVistos
+entity FichaHasTrimestre
+entity Horario{
+horaInicio ZonedDateTime required,
+horaFin ZonedDateTime required
+}
+relationship OneToMany{
+Cliente to Instructor{documento(numeroDocumento) required}
+}
+relationship OneToMany{
+Cliente to Aprendiz{documento(numeroDocumento) required}
+}
+relationship OneToMany{
+TipoDocumento to Cliente{tipoDocumento(sigla) required}
+}
+relationship OneToMany{
+Modalidad to Horario{modalidad(nombreModalidad) required}
+}
+relationship OneToMany{
+VersionHorario to Horario{VersionHorario(numeroVersion) required}
+}
+relationship OneToMany{
+Ambiente to Horario{idAmbiente(numeroAmbiente) required}
+}
+relationship OneToMany{
+Dia to Horario{Dia(nombreDia) required}
+}
+relationship OneToMany{
+Instructor to Horario{intructor required}
+}
+relationship OneToMany{
+FichaHasTrimestre to Horario{idFichaHasTrimestre}
+}
+relationship OneToMany{
+Trimestre to FichaHasTrimestre{trimestre(nombreTrimestre) required}
+}
+relationship OneToMany{
+Ficha to FichaHasTrimestre{ficha(numeroFicha) required}
+}
+relationship OneToMany{
+FichaHasTrimestre to ResultadosVistos{idFichaHasTrimestre}
+}
+relationship OneToMany{
+ResultadoAprendizaje to ResultadosVistos{resultadoAprendizaje(codigoResultado) required}
+}
+relationship OneToMany{
+TrimestreVigente to VersionHorario{trimestreVigente(trimestreProgramado) required}
+}
+relationship OneToMany{
+TipoAmbiente to Ambiente{tipoAmbiente(tipo) required}
+}
+relationship OneToMany{
+Sede to Ambiente{sede(nombreSede) required}
+}
+relationship OneToMany{
+Ambiente to LimitacionAmbiente{ambiente(numeroAmbiente) required}
+}
+relationship OneToMany{
+ResultadoAprendizaje to LimitacionAmbiente{resultadoAprendizaje(codigoResultado) required}
+}
+relationship OneToMany{
+Competencia to ResultadoAprendizaje{competencia(codigoCompetencia) required}
+}
+relationship OneToMany{
+ResultadoAprendizaje to DisponibilidadResultados{resultadoAprendizaje}
+}
+relationship OneToMany{
+Instructor to DisponibilidadResultados{intructor required}
+}
+relationship ManyToMany{
+Especialidad to Instructor
+}
+relationship ManyToMany{
+Vinculacion to Instructor
+}
+relationship OneToMany{
+Instructor to DisponibilidadHoraria{instructor required}
+}
+relationship OneToMany{
+Jornada to DisponibilidadHoraria{jornada(nombreJornada) required}
+}
+relationship OneToMany{
+Dia to DisponibilidadHoraria{dia(nombreDia) required}
+}
+relationship OneToMany{
+Ficha to Aprendiz{ficha(numeroFicha) required}
+}
+relationship OneToMany{
+EstadoFormacion to Aprendiz{estadoFormacion(nombreEstado) required}
+}
+relationship OneToMany{
+EstadoFicha to Ficha{estadoFicha(nombreEstado) required}
+}
+relationship OneToMany{
+Programa to Competencia{programa(codigo) required}
+}
+relationship OneToMany{
+NivelFormacion to Programa{nivelFormacion(nivel) required}
+}
+relationship OneToMany{
+Jornada to Trimestre{jornada(nombreJornada) required}
+}
+relationship OneToMany{
+NivelFormacion to Trimestre{nivelformacion(nivel) required}
+}
+relationship ManyToMany{
+Actividad to Planeacion
+} 
+relationship ManyToMany{
+Planeacion to Trimestre
+}
+relationship OneToMany{
+Proyecto to Fase{proyecto(codigo) required}
+}
+relationship OneToMany{
+Fase to Actividad{fase(nombre) required}
+}
+//Para hacer mas rapido la busqueda del api
+dto * with mapstruct
+//Para servicios
+service * with serviceClass
+

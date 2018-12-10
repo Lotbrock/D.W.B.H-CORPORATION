@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "sede": {
+      "home": {
+        "title": "Sedes",
+        "createLabel": "Crear nuevo Sede",
+        "createOrEditLabel": "Crear o editar Sede"
+      },
+      "created": "Un nuevo Sede ha sido creado con el identificador {{ param }}",
+      "updated": "Un Sede ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Sede ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Sede {{ id }}?"
+      },
+      "detail": {
+        "title": "Sede"
+      },
+      "nombreSede": "Nombre Sede",
+      "direccion": "Direccion",
+      "estado": "Estado",
+      "ambiente": "Ambiente"
+    }
+  }
+}

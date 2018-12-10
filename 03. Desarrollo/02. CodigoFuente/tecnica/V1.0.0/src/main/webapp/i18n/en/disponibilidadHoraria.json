@@ -1,0 +1,26 @@
+{
+  "dwbhApp": {
+    "disponibilidadHoraria": {
+      "home": {
+        "title": "Disponibilidad Horarias",
+        "createLabel": "Create a new Disponibilidad Horaria",
+        "createOrEditLabel": "Create or edit a Disponibilidad Horaria"
+      },
+      "created": "A new Disponibilidad Horaria is created with identifier {{ param }}",
+      "updated": "A Disponibilidad Horaria is updated with identifier {{ param }}",
+      "deleted": "A Disponibilidad Horaria is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Disponibilidad Horaria {{ id }}?"
+      },
+      "detail": {
+        "title": "Disponibilidad Horaria"
+      },
+      "anio": "Anio",
+      "horaInicio": "Hora Inicio",
+      "horaFin": "Hora Fin",
+      "instructor": "Instructor",
+      "jornada": "Jornada",
+      "dia": "Dia"
+    }
+  }
+}

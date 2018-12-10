@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="UPSemantica" transaction-type="RESOURCE_LOCAL">
+    <class>co.edu.sena.horarios.model.entities.Ambiente</class>
+    <class>co.edu.sena.horarios.model.entities.NivelFormacionTecnica</class>
+    <class>co.edu.sena.horarios.model.entities.Especialidad</class>
+    <class>co.edu.sena.horarios.model.entities.Programa</class>
+    <class>co.edu.sena.horarios.model.entities.Aprendiz</class>
+    <class>co.edu.sena.horarios.model.entities.Competencia</class>
+    <class>co.edu.sena.horarios.model.entities.EstadoFormacionFicha</class>
+    <class>co.edu.sena.horarios.model.entities.Proyecto</class>
+    <class>co.edu.sena.horarios.model.entities.Ficha</class>
+    <class>co.edu.sena.horarios.model.entities.Dia</class>
+    <class>co.edu.sena.horarios.model.entities.Fase</class>
+    <class>co.edu.sena.horarios.model.entities.Horario</class>
+    <class>co.edu.sena.horarios.model.entities.UsuarioHasRol</class>
+    <class>co.edu.sena.horarios.model.entities.EstadoFicha</class>
+    <class>co.edu.sena.horarios.model.entities.VersionHorario</class>
+    <class>co.edu.sena.horarios.model.entities.Jornada</class>
+    <class>co.edu.sena.horarios.model.entities.PlaneacionParaTrimestres</class>
+    <class>co.edu.sena.horarios.model.entities.FichaHasTrimestre</class>
+    <class>co.edu.sena.horarios.model.entities.Modalidad</class>
+    <class>co.edu.sena.horarios.model.entities.PlaneacionTrimestre</class>
+    <class>co.edu.sena.horarios.model.entities.Usuario</class>
+    <class>co.edu.sena.horarios.model.entities.RolUsuario</class>
+    <class>co.edu.sena.horarios.model.entities.DisponibilidadHoraria</class>
+    <class>co.edu.sena.horarios.model.entities.Trimestre</class>
+    <class>co.edu.sena.horarios.model.entities.DisponibilidadResultados</class>
+    <class>co.edu.sena.horarios.model.entities.Instructor</class>
+    <class>co.edu.sena.horarios.model.entities.TipoDeDocumento</class>
+    <class>co.edu.sena.horarios.model.entities.Sede</class>
+    <class>co.edu.sena.horarios.model.entities.ResultadoAprendizaje</class>
+    <class>co.edu.sena.horarios.model.entities.TrimestreVigente</class>
+    <class>co.edu.sena.horarios.model.entities.TipoAmbiente</class>
+    <class>co.edu.sena.horarios.model.entities.Actividad</class>
+    <class>co.edu.sena.horarios.model.entities.ServidorCorreoElectronico</class>
+    <class>co.edu.sena.horarios.model.entities.Vinculacion</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:4306/semantica?useTimezone=true&amp;serverTimezone=UTC"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="123456789"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="eclipselink.logging.level.sql" value="ALL"/>
+    </properties>
+  </persistence-unit>
+</persistence>

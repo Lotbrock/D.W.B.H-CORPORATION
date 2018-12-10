@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "fichaHasTrimestre": {
+      "home": {
+        "title": "Ficha Has Trimestres",
+        "createLabel": "Crear nuevo Ficha Has Trimestre",
+        "createOrEditLabel": "Crear o editar Ficha Has Trimestre"
+      },
+      "created": "Un nuevo Ficha Has Trimestre ha sido creado con el identificador {{ param }}",
+      "updated": "Un Ficha Has Trimestre ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Ficha Has Trimestre ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Ficha Has Trimestre {{ id }}?"
+      },
+      "detail": {
+        "title": "Ficha Has Trimestre"
+      },
+      "horario": "Horario",
+      "resultadosVistos": "Resultados Vistos",
+      "trimestre": "Trimestre",
+      "ficha": "Ficha"
+    }
+  }
+}

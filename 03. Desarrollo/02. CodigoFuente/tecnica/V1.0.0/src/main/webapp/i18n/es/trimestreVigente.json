@@ -1,0 +1,26 @@
+{
+  "dwbhApp": {
+    "trimestreVigente": {
+      "home": {
+        "title": "Trimestre Vigentes",
+        "createLabel": "Crear nuevo Trimestre Vigente",
+        "createOrEditLabel": "Crear o editar Trimestre Vigente"
+      },
+      "created": "Un nuevo Trimestre Vigente ha sido creado con el identificador {{ param }}",
+      "updated": "Un Trimestre Vigente ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Trimestre Vigente ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Trimestre Vigente {{ id }}?"
+      },
+      "detail": {
+        "title": "Trimestre Vigente"
+      },
+      "anio": "Anio",
+      "trimestreProgramado": "Trimestre Programado",
+      "fechaInicio": "Fecha Inicio",
+      "fechaFin": "Fecha Fin",
+      "estado": "Estado",
+      "versionHorario": "Version Horario"
+    }
+  }
+}

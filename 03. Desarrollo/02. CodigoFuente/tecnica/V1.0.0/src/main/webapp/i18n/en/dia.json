@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "dia": {
+      "home": {
+        "title": "Dias",
+        "createLabel": "Create a new Dia",
+        "createOrEditLabel": "Create or edit a Dia"
+      },
+      "created": "A new Dia is created with identifier {{ param }}",
+      "updated": "A Dia is updated with identifier {{ param }}",
+      "deleted": "A Dia is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dia {{ id }}?"
+      },
+      "detail": {
+        "title": "Dia"
+      },
+      "nombreDia": "Nombre Dia",
+      "estado": "Estado",
+      "horario": "Horario",
+      "disponibilidadHoraria": "Disponibilidad Horaria"
+    }
+  }
+}

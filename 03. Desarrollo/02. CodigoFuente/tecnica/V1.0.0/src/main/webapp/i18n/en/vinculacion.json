@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "vinculacion": {
+      "home": {
+        "title": "Vinculacions",
+        "createLabel": "Create a new Vinculacion",
+        "createOrEditLabel": "Create or edit a Vinculacion"
+      },
+      "created": "A new Vinculacion is created with identifier {{ param }}",
+      "updated": "A Vinculacion is updated with identifier {{ param }}",
+      "deleted": "A Vinculacion is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vinculacion {{ id }}?"
+      },
+      "detail": {
+        "title": "Vinculacion"
+      },
+      "tipoVinculacion": "Tipo Vinculacion",
+      "horas": "Horas",
+      "estado": "Estado",
+      "instructor": "Instructor"
+    }
+  }
+}

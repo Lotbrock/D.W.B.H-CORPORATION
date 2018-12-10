@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Horario.
+    -->
+    <changeSet id="20181205213118-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="modalidad_id"
+                                 baseTableName="horario"
+                                 constraintName="fk_horario_modalidad_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="modalidad"/>
+
+        <addForeignKeyConstraint baseColumnNames="version_horario_id"
+                                 baseTableName="horario"
+                                 constraintName="fk_horario_version_horario_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="version_horario"/>
+
+        <addForeignKeyConstraint baseColumnNames="id_ambiente_id"
+                                 baseTableName="horario"
+                                 constraintName="fk_horario_id_ambiente_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ambiente"/>
+
+        <addForeignKeyConstraint baseColumnNames="dia_id"
+                                 baseTableName="horario"
+                                 constraintName="fk_horario_dia_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dia"/>
+
+        <addForeignKeyConstraint baseColumnNames="intructor_id"
+                                 baseTableName="horario"
+                                 constraintName="fk_horario_intructor_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="instructor"/>
+
+        <addForeignKeyConstraint baseColumnNames="id_ficha_has_trimestre_id"
+                                 baseTableName="horario"
+                                 constraintName="fk_horario_id_ficha_has_trimestre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ficha_has_trimestre"/>
+
+        <addUniqueConstraint tableName="horario"
+                             columnNames="modalidad_id, hora_inicio, version_horario_id, id_ambiente_id, dia_id, intructor_id, id_ficha_has_trimestre_id"
+                             constraintName="uni_principal"/>
+
+
+    </changeSet>
+</databaseChangeLog>

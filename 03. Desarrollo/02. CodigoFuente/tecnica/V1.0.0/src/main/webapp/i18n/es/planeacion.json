@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "planeacion": {
+      "home": {
+        "title": "Planeacions",
+        "createLabel": "Crear nuevo Planeacion",
+        "createOrEditLabel": "Crear o editar Planeacion"
+      },
+      "created": "Un nuevo Planeacion ha sido creado con el identificador {{ param }}",
+      "updated": "Un Planeacion ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Planeacion ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Planeacion {{ id }}?"
+      },
+      "detail": {
+        "title": "Planeacion"
+      },
+      "codigoPlaneacfion": "Codigo Planeacfion",
+      "estado": "Estado",
+      "trimestre": "Trimestre",
+      "actividad": "Actividad"
+    }
+  }
+}

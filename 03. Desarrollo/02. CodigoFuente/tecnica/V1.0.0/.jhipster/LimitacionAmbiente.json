@@ -1,0 +1,29 @@
+{
+    "name": "LimitacionAmbiente",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "ambiente",
+            "otherEntityName": "ambiente",
+            "otherEntityField": "numeroAmbiente"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "resultadoAprendizaje",
+            "otherEntityName": "resultadoAprendizaje",
+            "otherEntityField": "codigoResultado"
+        }
+    ],
+    "changelogDate": "20181205213109",
+    "entityTableName": "limitacion_ambiente",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

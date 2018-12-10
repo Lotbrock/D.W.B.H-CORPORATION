@@ -1,0 +1,23 @@
+{
+  "dwbhApp": {
+    "estadoFormacion": {
+      "home": {
+        "title": "Estado Formacions",
+        "createLabel": "Crear nuevo Estado Formacion",
+        "createOrEditLabel": "Crear o editar Estado Formacion"
+      },
+      "created": "Un nuevo Estado Formacion ha sido creado con el identificador {{ param }}",
+      "updated": "Un Estado Formacion ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Estado Formacion ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Estado Formacion {{ id }}?"
+      },
+      "detail": {
+        "title": "Estado Formacion"
+      },
+      "nombreEstado": "Nombre Estado",
+      "estado": "Estado",
+      "aprendiz": "Aprendiz"
+    }
+  }
+}

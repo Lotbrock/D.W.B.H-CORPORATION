@@ -1,0 +1,27 @@
+{
+  "dwbhApp": {
+    "jornada": {
+      "home": {
+        "title": "Jornadas",
+        "createLabel": "Crear nuevo Jornada",
+        "createOrEditLabel": "Crear o editar Jornada"
+      },
+      "created": "Un nuevo Jornada ha sido creado con el identificador {{ param }}",
+      "updated": "Un Jornada ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Jornada ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Jornada {{ id }}?"
+      },
+      "detail": {
+        "title": "Jornada"
+      },
+      "siglaJornada": "Sigla Jornada",
+      "nombreJornada": "Nombre Jornada",
+      "descripcion": "Descripcion",
+      "imagenUrl": "Imagen Url",
+      "estado": "Estado",
+      "disponibilidadHoraria": "Disponibilidad Horaria",
+      "trimestre": "Trimestre"
+    }
+  }
+}

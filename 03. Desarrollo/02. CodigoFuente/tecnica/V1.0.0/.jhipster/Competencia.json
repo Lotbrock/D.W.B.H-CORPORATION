@@ -1,0 +1,45 @@
+{
+    "name": "Competencia",
+    "fields": [
+        {
+            "fieldName": "codigoCompetencia",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 50
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "resultadoAprendizaje",
+            "otherEntityName": "resultadoAprendizaje",
+            "otherEntityRelationshipName": "competencia"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "programa",
+            "otherEntityName": "programa",
+            "otherEntityField": "codigo"
+        }
+    ],
+    "changelogDate": "20181205213056",
+    "entityTableName": "competencia",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

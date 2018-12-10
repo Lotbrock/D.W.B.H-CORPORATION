@@ -1,0 +1,24 @@
+{
+  "dwbhApp": {
+    "dia": {
+      "home": {
+        "title": "Dias",
+        "createLabel": "Crear nuevo Dia",
+        "createOrEditLabel": "Crear o editar Dia"
+      },
+      "created": "Un nuevo Dia ha sido creado con el identificador {{ param }}",
+      "updated": "Un Dia ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Dia ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Dia {{ id }}?"
+      },
+      "detail": {
+        "title": "Dia"
+      },
+      "nombreDia": "Nombre Dia",
+      "estado": "Estado",
+      "horario": "Horario",
+      "disponibilidadHoraria": "Disponibilidad Horaria"
+    }
+  }
+}

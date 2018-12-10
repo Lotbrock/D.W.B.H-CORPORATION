@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Competencia.
+    -->
+    <changeSet id="20181205213056-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="programa_id"
+                                 baseTableName="competencia"
+                                 constraintName="fk_competencia_programa_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="programa"/>
+
+        <!-- Se crea el unique compuesto principal de la tabla -->
+        <addUniqueConstraint tableName="competencia"
+                             columnNames="programa_id, codigo_competencia"
+                             constraintName="uni_principal"/>
+
+    </changeSet>
+</databaseChangeLog>

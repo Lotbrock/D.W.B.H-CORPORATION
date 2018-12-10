@@ -1,0 +1,22 @@
+{
+  "dwbhApp": {
+    "resultadosVistos": {
+      "home": {
+        "title": "Resultados Vistos",
+        "createLabel": "Crear nuevo Resultados Vistos",
+        "createOrEditLabel": "Crear o editar Resultados Vistos"
+      },
+      "created": "Un nuevo Resultados Vistos ha sido creado con el identificador {{ param }}",
+      "updated": "Un Resultados Vistos ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Resultados Vistos ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Resultados Vistos {{ id }}?"
+      },
+      "detail": {
+        "title": "Resultados Vistos"
+      },
+      "idFichaHasTrimestre": "Id Ficha Has Trimestre",
+      "resultadoAprendizaje": "Resultado Aprendizaje"
+    }
+  }
+}

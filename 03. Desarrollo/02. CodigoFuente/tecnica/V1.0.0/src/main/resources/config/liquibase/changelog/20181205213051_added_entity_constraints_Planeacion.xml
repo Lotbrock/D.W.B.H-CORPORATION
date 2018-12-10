@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Planeacion.
+    -->
+    <changeSet id="20181205213051-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="planeacions_id"
+                                 baseTableName="planeacion_trimestre"
+                                 constraintName="fk_planeacion_trimestre_planeacions_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="planeacion"/>
+        <addForeignKeyConstraint baseColumnNames="trimestres_id"
+                                 baseTableName="planeacion_trimestre"
+                                 constraintName="fk_planeacion_trimestre_trimestres_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="trimestre"/>
+    </changeSet>
+</databaseChangeLog>
