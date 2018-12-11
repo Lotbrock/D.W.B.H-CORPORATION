@@ -1,0 +1,18 @@
+/*body{
+	background: url(../img/mundo.jpg);
+}*/
+.contenedor{
+	background:rgba(186,255,193,0.5);
+	/*width: 300px;
+	height: 300px;*/
+	left: %;
+	display: inline-block;
+	border-radius: 10px;
+
+}
+
+.chbox{
+	top: 20%
+	left:50%;
+}
+
