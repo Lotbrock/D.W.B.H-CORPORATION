@@ -1,4 +1,4 @@
 export * from './account';
 export * from './admin';
 export * from './locale';
-export * from './entities2';
+export * from './entities';
