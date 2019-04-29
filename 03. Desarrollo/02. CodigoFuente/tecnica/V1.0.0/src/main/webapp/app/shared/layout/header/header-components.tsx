@@ -13,7 +13,7 @@ export const NavDropdown = props => (
       <FontAwesomeIcon icon={props.icon} />
       <span>{props.name}</span>
     </DropdownToggle>
-    <DropdownMenu right style={props.style} className="pre-scrollable">
+    <DropdownMenu style={props.style} className="pre-scrollable">
       {props.children}
     </DropdownMenu>
   </UncontrolledDropdown>

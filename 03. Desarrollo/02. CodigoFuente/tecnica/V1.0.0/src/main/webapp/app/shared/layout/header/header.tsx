@@ -10,11 +10,12 @@ import { NavLink as Link } from 'react-router-dom';
 import LoadingBar from 'react-redux-loading-bar';
 
 import { Home, Brand } from './header-components';
-import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu } from './menus';
+import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu, EntitiesMenu2 } from './menus';
 
 export interface IHeaderProps {
   isAuthenticated: boolean;
   isAdmin: boolean;
+  isLider: boolean;
   ribbonEnv: string;
   isInProduction: boolean;
   isSwaggerEnabled: boolean;
@@ -51,7 +52,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
   };
 
   render() {
-    const { currentLocale, isAuthenticated, isAdmin, isSwaggerEnabled, isInProduction } = this.props;
+    const { currentLocale, isAuthenticated, isAdmin, isSwaggerEnabled, isInProduction, isLider } = this.props;
 
     /* jhipster-needle-add-element-to-menu - JHipster will add new menu items here */
 
@@ -60,13 +61,16 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
 
         <Menu className="bm-menu">
           <Brand />
+          <Nav vertical>
             <Home />
-            {isAuthenticated && <EntitiesMenu />}
+            {isAuthenticated && isAdmin && <EntitiesMenu />}
+            {isAuthenticated && isLider && <EntitiesMenu2/>}
             {isAuthenticated && isAdmin && <AdminMenu showSwagger={isSwaggerEnabled} />}
             <LocaleMenu currentLocale={currentLocale} onClick={this.handleLocaleChange} />
             <AccountMenu isAuthenticated={isAuthenticated} />
+          </Nav>
         </Menu>
-     </div>
+      </div>
     );
   }
 }
