@@ -2,7 +2,7 @@ import './header.css';
 
 import React from 'react';
 import { Translate, Storage } from 'react-jhipster';
-import { Navbar, Nav, NavbarToggler, NavbarBrand, Collapse } from 'reactstrap';
+import { Navbar, Nav, NavbarToggler, NavbarBrand, Collapse, NavLink, NavItem } from 'reactstrap';
 import { slide as Menu } from 'react-burger-menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -25,11 +25,13 @@ export interface IHeaderProps {
 
 export interface IHeaderState {
   menuOpen: boolean;
+  isOpenPages: boolean;
 }
 
 export default class Header extends React.Component<IHeaderProps, IHeaderState> {
   state: IHeaderState = {
-    menuOpen: false
+    menuOpen: false,
+    isOpenPages: false
   };
 
   handleLocaleChange = event => {
@@ -46,6 +48,12 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
         </a>
       </div>
     ) : null;
+
+  handleClickPages = () => {
+
+    this.setState({ isOpenPages: !this.state.isOpenPages });
+
+  };
 
   toggleMenu = () => {
     this.setState({ menuOpen: !this.state.menuOpen });
