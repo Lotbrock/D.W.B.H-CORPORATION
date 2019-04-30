@@ -1,11 +1,49 @@
 import React from 'react';
 import { Translate } from 'react-jhipster';
 
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, NavItem, NavLink, NavbarBrand } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, NavItem, NavLink, NavbarBrand, Collapse } from 'reactstrap';
 import { NavLink as Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import appConfig from 'app/config/constants';
+
+export const Ejemplo = props => (
+  <>
+    <NavItem
+      className='nav-item'
+      onClick={props.onClick}
+    >
+      <NavLink className="nav-item-collapse">
+        <div className="d-flex">
+          <span className="">Pages</span>
+        </div>
+      </NavLink>
+    </NavItem>
+    <Collapse isOpen={ props.isOpen }>
+      <NavItem className='nav-item'>
+        <NavLink
+          className="text-uppercase"
+        >
+          <span className="">Holis</span>
+        </NavLink>
+      </NavItem>
+      <NavItem className='nav-item'>
+        <NavLink
+          className="text-uppercase"
+        >
+          <span className="">Holis</span>
+        </NavLink>
+      </NavItem>
+      <NavItem className='nav-item'>
+        <NavLink
+          className="text-uppercase"
+        >
+          <span className="">Holis</span>
+        </NavLink>
+      </NavItem>
+    </Collapse>
+</>
+);
 
 export const NavDropdown = props => (
   <UncontrolledDropdown direction="right" inNavbar id={props.id}>

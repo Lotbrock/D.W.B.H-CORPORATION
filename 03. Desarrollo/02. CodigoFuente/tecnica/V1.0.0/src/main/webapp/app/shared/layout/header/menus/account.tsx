@@ -7,39 +7,67 @@ import { NavDropdown } from '../header-components';
 
 const accountMenuItemsAuthenticated = (
   <>
-    <DropdownItem tag={Link} to="/account/settings">
-      <FontAwesomeIcon icon="wrench" fixedWidth /> <Translate contentKey="global.menu.account.settings">Settings</Translate>
-    </DropdownItem>
-    <DropdownItem tag={Link} to="/account/password">
-      <FontAwesomeIcon icon="clock" fixedWidth /> <Translate contentKey="global.menu.account.password">Password</Translate>
-    </DropdownItem>
-    <DropdownItem tag={Link} to="/logout">
-      <FontAwesomeIcon icon="sign-out-alt" fixedWidth /> <Translate contentKey="global.menu.account.logout">Sign out</Translate>
-    </DropdownItem>
+    <NavItem tag={Link} to="/account/settings">
+      <NavLink
+        className="text-uppercase"
+      >
+        <FontAwesomeIcon icon="wrench" fixedWidth /> <Translate contentKey="global.menu.account.settings">Settings</Translate>
+      </NavLink>
+
+    </NavItem>
+    <NavItem tag={Link} to="/account/password">
+      <NavLink
+        className="text-uppercase"
+      >
+        <FontAwesomeIcon icon="clock" fixedWidth /> <Translate contentKey="global.menu.account.password">Password</Translate>
+      </NavLink>
+
+    </NavItem>
+    <NavItem tag={Link} to="/logout">
+      <NavLink
+        className="text-uppercase"
+      >
+        <FontAwesomeIcon icon="sign-out-alt" fixedWidth /> <Translate contentKey="global.menu.account.logout">Sign out</Translate>
+      </NavLink>
+    </NavItem>
   </>
 );
 
 const accountMenuItems = (
   <>
-    <DropdownItem className="nav-item" id="login-item" tag={Link} to="/login">
-      <FontAwesomeIcon icon="sign-in-alt" fixedWidth /> <Translate contentKey="global.menu.account.login">Sign in</Translate>
-    </DropdownItem>
-    <DropdownItem className="nav-item" tag={Link} to="/register">
-      <FontAwesomeIcon icon="sign-in-alt" fixedWidth /> <Translate contentKey="global.menu.account.register">Register</Translate>
-    </DropdownItem>
+    <NavItem className="nav-item" id="login-item" tag={Link} to="/login">
+      <NavLink
+        className="text-uppercase"
+      >
+        <FontAwesomeIcon icon="sign-in-alt" fixedWidth /> <Translate contentKey="global.menu.account.login">Sign in</Translate>
+      </NavLink>
+    </NavItem>
+    <NavItem className="nav-item" tag={Link} to="/register">
+      <NavLink
+        className="text-uppercase"
+      >
+        <FontAwesomeIcon icon="sign-in-alt" fixedWidth /> <Translate contentKey="global.menu.account.register">Register</Translate>
+      </NavLink>
+    </NavItem>
   </>
 );
 
-export const AccountMenu = ({ isAuthenticated = false }) => (
-  <NavItem className="nav-item">
-    <NavLink className="navbar-collapse">
-      <div className="d-flex">
-          <NavDropdown icon="user" name={translate('global.menu.account.main')} id="account-menu">
-            {isAuthenticated ? accountMenuItemsAuthenticated : accountMenuItems}
-          </NavDropdown>
-      </div>
+export const AccountMenu = ({ isAuthenticated = false}) => (
+  <>
+    <NavItem
+      className='nav-item'
+      onClick={console.log("HOLIS")}
+    >
+      <NavLink className="nav-item-collapse">
+        <div className="d-flex">
+          <span className="">{translate('global.menu.account.main')}</span>
+        </div>
       </NavLink>
-  </NavItem>
+    </NavItem>
+    <Collapse isOpen={ false }>
+      {isAuthenticated ? accountMenuItemsAuthenticated : accountMenuItems}
+    </Collapse>
+  </>
 );
 
 export default AccountMenu;

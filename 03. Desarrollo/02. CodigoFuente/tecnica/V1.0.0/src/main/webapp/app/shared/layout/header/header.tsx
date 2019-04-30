@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink as Link } from 'react-router-dom';
 import LoadingBar from 'react-redux-loading-bar';
 
-import { Home, Brand } from './header-components';
+import { Home, Brand, Ejemplo } from './header-components';
 import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu, EntitiesMenu2 } from './menus';
 
 export interface IHeaderProps {
@@ -26,13 +26,17 @@ export interface IHeaderProps {
 export interface IHeaderState {
   menuOpen: boolean;
   isOpenPages: boolean;
+  isOpenAccount: boolean;
+
 }
 
 export default class Header extends React.Component<IHeaderProps, IHeaderState> {
   state: IHeaderState = {
     menuOpen: false,
-    isOpenPages: false
-  };
+    isOpenPages: false,
+    isOpenAccount: false
+
+};
 
   handleLocaleChange = event => {
     const langKey = event.target.value;
@@ -55,6 +59,11 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
 
   };
 
+  handleClickAccount = () => {
+
+    this.setState({ isOpenAccount: !this.state.isOpenAccount });
+
+  };
   toggleMenu = () => {
     this.setState({ menuOpen: !this.state.menuOpen });
   };
@@ -66,16 +75,15 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
 
     return (
       <div id="app-header">
-
         <Menu className="bm-menu">
           <Brand />
           <Nav vertical>
             <Home />
+            <Ejemplo onClick={this.handleClickPages} isOpen={this.state.isOpenPages}/>
             {isAuthenticated && isAdmin && <EntitiesMenu />}
             {isAuthenticated && isLider && <EntitiesMenu2/>}
             {isAuthenticated && isAdmin && <AdminMenu showSwagger={isSwaggerEnabled} />}
-            <LocaleMenu currentLocale={currentLocale} onClick={this.handleLocaleChange} />
-            <AccountMenu isAuthenticated={isAuthenticated} />
+            <AccountMenu isAuthenticated={isAuthenticated}/>
           </Nav>
         </Menu>
       </div>
