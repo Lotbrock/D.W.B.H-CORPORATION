@@ -10,7 +10,7 @@ import appConfig from 'app/config/constants';
 export const Ejemplo = props => (
   <>
     <NavItem
-      className='nav-item'
+      className="nav-item"
       onClick={props.onClick}
     >
       <NavLink className="nav-item-collapse">
@@ -20,21 +20,21 @@ export const Ejemplo = props => (
       </NavLink>
     </NavItem>
     <Collapse isOpen={ props.isOpen }>
-      <NavItem className='nav-item'>
+      <NavItem className="nav-item">
         <NavLink
           className="text-uppercase"
         >
           <span className="">Holis</span>
         </NavLink>
       </NavItem>
-      <NavItem className='nav-item'>
+      <NavItem className="nav-item">
         <NavLink
           className="text-uppercase"
         >
           <span className="">Holis</span>
         </NavLink>
       </NavItem>
-      <NavItem className='nav-item'>
+      <NavItem className="nav-item">
         <NavLink
           className="text-uppercase"
         >

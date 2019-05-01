@@ -83,7 +83,7 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
             {isAuthenticated && isAdmin && <EntitiesMenu />}
             {isAuthenticated && isLider && <EntitiesMenu2/>}
             {isAuthenticated && isAdmin && <AdminMenu showSwagger={isSwaggerEnabled} />}
-            <AccountMenu isAuthenticated={isAuthenticated}/>
+            <AccountMenu isAuthenticated={false} props={this.state.isOpenAccount}/>
           </Nav>
         </Menu>
       </div>

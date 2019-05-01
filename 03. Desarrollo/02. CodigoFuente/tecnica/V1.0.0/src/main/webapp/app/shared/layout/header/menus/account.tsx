@@ -52,11 +52,11 @@ const accountMenuItems = (
   </>
 );
 
-export const AccountMenu = ({ isAuthenticated = false}) => (
+export const AccountMenu = ({ isAuthenticated = false, props }) => (
   <>
     <NavItem
-      className='nav-item'
-      onClick={console.log("HOLIS")}
+      id="account-menu"
+      className="nav-item"
     >
       <NavLink className="nav-item-collapse">
         <div className="d-flex">
@@ -64,7 +64,7 @@ export const AccountMenu = ({ isAuthenticated = false}) => (
         </div>
       </NavLink>
     </NavItem>
-    <Collapse isOpen={ false }>
+    <Collapse isOpen={ props.isOpenAccount }>
       {isAuthenticated ? accountMenuItemsAuthenticated : accountMenuItems}
     </Collapse>
   </>
