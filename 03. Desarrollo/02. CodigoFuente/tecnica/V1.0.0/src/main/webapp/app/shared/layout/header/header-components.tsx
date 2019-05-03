@@ -6,6 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import appConfig from 'app/config/constants';
 
+/*
+=======================================================================================================================================
+
+                                      EJEMPLO DESPLEGABLE PROTOT. 1
+
+=======================================================================================================================================
 export const Ejemplo = props => (
   <NavDropdown id="ejemplo" name="Ejemplo" icon="user">
     <NavItem className="nav-item">
@@ -30,7 +36,8 @@ export const Ejemplo = props => (
       </NavLink>
     </NavItem>
 </NavDropdown>
-);
+);*/
+
 export const NavDropdown = props => (
   <>
   <NavItem
@@ -67,11 +74,15 @@ export const Brand = props => (
 
 export const Home = props => (
   <NavItem className="bm-item">
-    <NavLink tag={Link} to="/" className="d-flex align-items-center">
+    <NavLink>
+    <Link to="/"
+          className="text-success"
+    >
       <FontAwesomeIcon icon="home" />
       <span>
         <Translate contentKey="global.menu.home">Home</Translate>
       </span>
+    </Link>
     </NavLink>
   </NavItem>
 );

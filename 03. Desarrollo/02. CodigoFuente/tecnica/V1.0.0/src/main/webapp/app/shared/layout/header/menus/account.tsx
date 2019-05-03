@@ -1,31 +1,35 @@
 import React from 'react';
-import { DropdownItem, NavLink, NavItem, UncontrolledCollapse } from 'reactstrap';
+import { DropdownItem, NavItem, UncontrolledCollapse } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavLink as Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Translate, translate } from 'react-jhipster';
 import { NavDropdown } from '../header-components';
 
 const accountMenuItemsAuthenticated = (
   <>
-    <NavItem tag={Link} to="/account/settings">
+    <NavItem>
       <NavLink
-        className="text-uppercase"
+        to="/account/settings"
+        className="text-success"
       >
-        <FontAwesomeIcon icon="wrench" fixedWidth /> <Translate contentKey="global.menu.account.settings">Settings</Translate>
+        <FontAwesomeIcon icon="wrench" fixedWidth /><Translate contentKey="global.menu.account.settings">Settings</Translate>
       </NavLink>
 
     </NavItem>
-    <NavItem tag={Link} to="/account/password">
+    <NavItem >
       <NavLink
-        className="text-uppercase"
+        to="/account/password"
+        className="text-success"
       >
-        <FontAwesomeIcon icon="clock" fixedWidth /> <Translate contentKey="global.menu.account.password">Password</Translate>
+
+        <FontAwesomeIcon icon="clock" fixedWidth /><Translate contentKey="global.menu.account.password">Password</Translate>
       </NavLink>
 
     </NavItem>
-    <NavItem tag={Link} to="/logout">
+    <NavItem >
       <NavLink
-        className="text-uppercase"
+        to="/logout"
+        className="text-success"
       >
         <FontAwesomeIcon icon="sign-out-alt" fixedWidth /> <Translate contentKey="global.menu.account.logout">Sign out</Translate>
       </NavLink>
@@ -35,18 +39,12 @@ const accountMenuItemsAuthenticated = (
 
 const accountMenuItems = (
   <>
-    <NavItem className="nav-item" id="login-item" tag={Link} to="/login">
+    <NavItem className="nav-item" id="login-item" >
       <NavLink
-        className="text-uppercase"
+        className="text-secondary"
+        to="/login"
       >
-        <FontAwesomeIcon icon="sign-in-alt" fixedWidth /> <Translate contentKey="global.menu.account.login">Sign in</Translate>
-      </NavLink>
-    </NavItem>
-    <NavItem className="nav-item" tag={Link} to="/register">
-      <NavLink
-        className="text-uppercase"
-      >
-        <FontAwesomeIcon icon="sign-in-alt" fixedWidth /> <Translate contentKey="global.menu.account.register">Register</Translate>
+        <FontAwesomeIcon icon="sign-in-alt" fixedWidth /><Translate contentKey="global.menu.account.login">Sign in</Translate>
       </NavLink>
     </NavItem>
   </>
