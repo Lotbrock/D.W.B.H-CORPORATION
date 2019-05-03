@@ -41,7 +41,7 @@ const accountMenuItems = (
   <>
     <NavItem className="nav-item" id="login-item" >
       <NavLink
-        className="text-secondary"
+        className="text-success"
         to="/login"
       >
         <FontAwesomeIcon icon="sign-in-alt" fixedWidth /><Translate contentKey="global.menu.account.login">Sign in</Translate>
