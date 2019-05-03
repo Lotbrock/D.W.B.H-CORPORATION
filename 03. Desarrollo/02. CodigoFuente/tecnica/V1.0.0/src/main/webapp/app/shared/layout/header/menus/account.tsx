@@ -53,21 +53,9 @@ const accountMenuItems = (
 );
 
 export const AccountMenu = ({ isAuthenticated = false }) => (
-<>
-    <NavItem
-      id="account"
-      className="nav-item"
-    >
-      <NavLink className="nav-item-collapse">
-        <div className="d-flex">
-          <span className="">{translate('global.menu.account.main')}</span>
-        </div>
-      </NavLink>
-    </NavItem>
-    <UncontrolledCollapse toggler="#account">
+<NavDropdown id="account" icon="user" name={translate('global.menu.account.main')} >
       {isAuthenticated ? accountMenuItemsAuthenticated : accountMenuItems}
-    </UncontrolledCollapse>
-  </>
+  </NavDropdown>
 );
 
 export default AccountMenu;

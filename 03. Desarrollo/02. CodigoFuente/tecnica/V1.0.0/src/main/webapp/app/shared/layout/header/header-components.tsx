@@ -7,53 +7,46 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import appConfig from 'app/config/constants';
 
 export const Ejemplo = props => (
-  <>
-    <NavItem
-      id="toggler"
-      className="nav-item"
-    >
-      <NavLink className="nav-item-collapse">
-        <div className="d-flex">
-          <span className="">Pages</span>
-        </div>
+  <NavDropdown id="ejemplo" name="Ejemplo" icon="user">
+    <NavItem className="nav-item">
+      <NavLink
+        className="text-uppercase"
+      >
+        <span className="">Holis</span>
       </NavLink>
     </NavItem>
-    <UncontrolledCollapse toggler="#toggler">
-      <NavItem className="nav-item">
-        <NavLink
-          className="text-uppercase"
-        >
-          <span className="">Holis</span>
-        </NavLink>
-      </NavItem>
-      <NavItem className="nav-item">
-        <NavLink
-          className="text-uppercase"
-        >
-          <span className="">Holis</span>
-        </NavLink>
-      </NavItem>
-      <NavItem className="nav-item">
-        <NavLink
-          className="text-uppercase"
-        >
-          <span className="">Holis</span>
-        </NavLink>
-      </NavItem>
-    </UncontrolledCollapse>
-</>
+    <NavItem className="nav-item">
+      <NavLink
+        className="text-uppercase"
+      >
+        <span className="">Holis</span>
+      </NavLink>
+    </NavItem>
+    <NavItem className="nav-item">
+      <NavLink
+        className="text-uppercase"
+      >
+        <span className="">Holis</span>
+      </NavLink>
+    </NavItem>
+</NavDropdown>
 );
-
 export const NavDropdown = props => (
-  <UncontrolledDropdown direction="right" inNavbar id={props.id}>
-    <DropdownToggle nav caret className="d-flex align-items-center">
-      <FontAwesomeIcon icon={props.icon} />
-      <span>{props.name}</span>
-    </DropdownToggle>
-    <DropdownMenu style={props.style} className="pre-scrollable">
-      {props.children}
-    </DropdownMenu>
-  </UncontrolledDropdown>
+  <>
+  <NavItem
+id={props.id}
+className="nav-item"
+  >
+  <NavLink className="nav-item-collapse">
+  <div className="d-flex">
+    <FontAwesomeIcon icon={props.icon} /> <span className="">{props.name}</span>
+  </div>
+  </NavLink>
+  </NavItem>
+  <UncontrolledCollapse toggler={'#' + props.id}>
+    {props.children}
+  </UncontrolledCollapse>
+  </>
 );
 
 export const BrandIcon = props => (
