@@ -1,5 +1,5 @@
 import React from 'react';
-import { DropdownItem, NavLink, NavItem, Collapse } from 'reactstrap';
+import { DropdownItem, NavLink, NavItem, UncontrolledCollapse } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink as Link } from 'react-router-dom';
 import { Translate, translate } from 'react-jhipster';
@@ -52,10 +52,10 @@ const accountMenuItems = (
   </>
 );
 
-export const AccountMenu = ({ isAuthenticated = false, props }) => (
-  <>
+export const AccountMenu = ({ isAuthenticated = false }) => (
+<>
     <NavItem
-      id="account-menu"
+      id="account"
       className="nav-item"
     >
       <NavLink className="nav-item-collapse">
@@ -64,9 +64,9 @@ export const AccountMenu = ({ isAuthenticated = false, props }) => (
         </div>
       </NavLink>
     </NavItem>
-    <Collapse isOpen={ props.isOpenAccount }>
+    <UncontrolledCollapse toggler="#account">
       {isAuthenticated ? accountMenuItemsAuthenticated : accountMenuItems}
-    </Collapse>
+    </UncontrolledCollapse>
   </>
 );
 

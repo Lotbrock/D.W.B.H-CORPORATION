@@ -25,16 +25,11 @@ export interface IHeaderProps {
 
 export interface IHeaderState {
   menuOpen: boolean;
-  isOpenPages: boolean;
-  isOpenAccount: boolean;
-
 }
 
 export default class Header extends React.Component<IHeaderProps, IHeaderState> {
   state: IHeaderState = {
-    menuOpen: false,
-    isOpenPages: false,
-    isOpenAccount: false
+    menuOpen: false
 
 };
 
@@ -53,17 +48,6 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
       </div>
     ) : null;
 
-  handleClickPages = () => {
-
-    this.setState({ isOpenPages: !this.state.isOpenPages });
-
-  };
-
-  handleClickAccount = () => {
-
-    this.setState({ isOpenAccount: !this.state.isOpenAccount });
-
-  };
   toggleMenu = () => {
     this.setState({ menuOpen: !this.state.menuOpen });
   };
@@ -79,11 +63,11 @@ export default class Header extends React.Component<IHeaderProps, IHeaderState> 
           <Brand />
           <Nav vertical>
             <Home />
-            <Ejemplo onClick={this.handleClickPages} isOpen={this.state.isOpenPages}/>
+            <Ejemplo/>
             {isAuthenticated && isAdmin && <EntitiesMenu />}
             {isAuthenticated && isLider && <EntitiesMenu2/>}
             {isAuthenticated && isAdmin && <AdminMenu showSwagger={isSwaggerEnabled} />}
-            <AccountMenu isAuthenticated={false} props={this.state.isOpenAccount}/>
+            <AccountMenu isAuthenticated={isAuthenticated}/>
           </Nav>
         </Menu>
       </div>

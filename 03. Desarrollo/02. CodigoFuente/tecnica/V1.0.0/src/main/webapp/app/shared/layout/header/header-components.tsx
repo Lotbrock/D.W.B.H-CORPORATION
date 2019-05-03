@@ -1,7 +1,6 @@
 import React from 'react';
 import { Translate } from 'react-jhipster';
-
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, NavItem, NavLink, NavbarBrand, Collapse } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, NavItem, NavLink, NavbarBrand, UncontrolledCollapse } from 'reactstrap';
 import { NavLink as Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -10,8 +9,8 @@ import appConfig from 'app/config/constants';
 export const Ejemplo = props => (
   <>
     <NavItem
+      id="toggler"
       className="nav-item"
-      onClick={props.onClick}
     >
       <NavLink className="nav-item-collapse">
         <div className="d-flex">
@@ -19,7 +18,7 @@ export const Ejemplo = props => (
         </div>
       </NavLink>
     </NavItem>
-    <Collapse isOpen={ props.isOpen }>
+    <UncontrolledCollapse toggler="#toggler">
       <NavItem className="nav-item">
         <NavLink
           className="text-uppercase"
@@ -41,7 +40,7 @@ export const Ejemplo = props => (
           <span className="">Holis</span>
         </NavLink>
       </NavItem>
-    </Collapse>
+    </UncontrolledCollapse>
 </>
 );
 
