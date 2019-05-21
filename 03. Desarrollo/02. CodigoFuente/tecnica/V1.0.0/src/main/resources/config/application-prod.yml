@@ -34,9 +34,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql:192.168.99.100//:3306/dwbh?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false
+        url: jdbc:mysql://horarios.cizlb4pvtzno.us-east-1.rds.amazonaws.com:3306/dwbh?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false
         username: root
-        password: abc123
+        password: 123456789
         hikari:
             auto-commit: false
             data-source-properties:
