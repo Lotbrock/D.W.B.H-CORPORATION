@@ -22,8 +22,7 @@ const items = [
     caption: 'Slide 2'
   },
   {
-    src:
-      '22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: 'http://4.bp.blogspot.com/-dICX1XDuhM4/TVtJVDCCfjI/AAAAAAAAABI/tvgqKHWcY_c/s1600/ambiente_conectividad_C__Sur_1_.JPG',
     altText: 'Slide 3',
     caption: 'Slide 3'
   }
