@@ -40,7 +40,7 @@ export class Home extends React.Component<IHomeProp> {
           </p>
           {account && account.login ? (
             <div>
-              <Alert color="success">
+              <Alert color="primary">
                 <Translate contentKey="home.logged.message" interpolate={{ username: account.login }}>
                   You are logged in as user {account.login}.
                 </Translate>
@@ -48,7 +48,7 @@ export class Home extends React.Component<IHomeProp> {
             </div>
           ) : (
             <div>
-              <Alert color="warning">
+              <Alert color="primary">
                 <Translate contentKey="global.messages.info.authenticated.prefix">If you want to </Translate>
                 <Link to="/login" className="alert-link">
                   <Translate contentKey="global.messages.info.authenticated.link"> sign in</Translate>
@@ -60,7 +60,7 @@ export class Home extends React.Component<IHomeProp> {
                 </Translate>
               </Alert>
 
-              <Alert color="warning">
+              <Alert color="primary">
                 <Translate contentKey="global.messages.info.register.noaccount">You do not have an account yet?</Translate>
                 &nbsp;
                 <Link to="/register" className="alert-link">
