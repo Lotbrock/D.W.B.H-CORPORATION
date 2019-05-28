@@ -29,7 +29,7 @@ eureka:
 
 spring:
     profiles:
-        active: prod
+        active: dev
         include:
             - swagger
             # Uncomment to activate TLS for the dev profile
