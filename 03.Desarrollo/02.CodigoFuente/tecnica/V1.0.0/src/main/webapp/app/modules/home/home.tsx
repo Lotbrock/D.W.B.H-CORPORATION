@@ -12,19 +12,13 @@ import { getSession } from 'app/shared/reducers/authentication';
 export interface IHomeProp extends StateProps, DispatchProps {}
 const items = [
   {
-    src: 'http://3.bp.blogspot.com/-zrmw9YeU3nw/Wg2wTcYeYaI/AAAAAAAADhI/XlG-aH_ScsQc4vGWqw4p-qbddsVBvky2gCK4BGAYYCw/s1600/DSC03985.JPG',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    src: 'http://3.bp.blogspot.com/-zrmw9YeU3nw/Wg2wTcYeYaI/AAAAAAAADhI/XlG-aH_ScsQc4vGWqw4p-qbddsVBvky2gCK4BGAYYCw/s1600/DSC03985.JPG'
   },
   {
-    src: 'https://2.bp.blogspot.com/-OjSptrI_zJs/V0cWQsPaiHI/AAAAAAAAGag/ykNb-sIKwG4Mbj_Ib19pEBA-EehR-pGyQCLcB/s1600/sedes-01.png',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    src: 'https://2.bp.blogspot.com/-OjSptrI_zJs/V0cWQsPaiHI/AAAAAAAAGag/ykNb-sIKwG4Mbj_Ib19pEBA-EehR-pGyQCLcB/s1600/sedes-01.png'
   },
   {
-    src: 'http://4.bp.blogspot.com/-dICX1XDuhM4/TVtJVDCCfjI/AAAAAAAAABI/tvgqKHWcY_c/s1600/ambiente_conectividad_C__Sur_1_.JPG',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    src: 'http://4.bp.blogspot.com/-dICX1XDuhM4/TVtJVDCCfjI/AAAAAAAAABI/tvgqKHWcY_c/s1600/ambiente_conectividad_C__Sur_1_.JPG'
   }
 ];
 
