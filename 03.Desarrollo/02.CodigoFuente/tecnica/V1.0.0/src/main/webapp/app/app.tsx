@@ -30,9 +30,9 @@ export class App extends React.Component<IAppProps> {
     const paddingTop = '60px';
     return (
       <Router>
-        <div className="app-container" >
+        <div className="app-container">
           <ToastContainer
-            position={toast.POSITION.TOP_LEFT as ToastPosition}
+            position={toast.POSITION.BOTTOM_LEFT as ToastPosition}
             className="toastify-container"
             toastClassName="toastify-toast"
           />
