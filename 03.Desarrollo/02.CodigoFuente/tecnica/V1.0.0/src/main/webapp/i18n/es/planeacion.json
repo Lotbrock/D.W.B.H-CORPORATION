@@ -2,7 +2,7 @@
   "dwbhApp": {
     "planeacion": {
       "home": {
-        "title": "Planeacions",
+        "title": "Planeaciones",
         "createLabel": "Crear nuevo Planeacion",
         "createOrEditLabel": "Crear o editar Planeacion"
       },

@@ -24,9 +24,10 @@ export class Planeacion extends React.Component<IPlaneacionProps> {
     return (
       <div>
         <h2 id="planeacion-heading">
-          <Translate contentKey="dwbhApp.planeacion.home.title">Planeacions</Translate>
+          <Translate contentKey="dwbhApp.planeacion.home.title">Planeacion</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="dwbhApp.planeacion.home.createLabel">Create new Planeacion</Translate>
           </Link>
         </h2>
@@ -65,7 +66,7 @@ export class Planeacion extends React.Component<IPlaneacionProps> {
                     {planeacion.trimestres
                       ? planeacion.trimestres.map((val, j) => (
                           <span key={j}>
-                            <Link to={`trimestre/${val.id}`}>{val.id}</Link>
+                            <Link to={`trimestre/${val.id}`}>{val.nombreTrimestre}</Link>
                             {j === planeacion.trimestres.length - 1 ? '' : ', '}
                           </span>
                         ))
