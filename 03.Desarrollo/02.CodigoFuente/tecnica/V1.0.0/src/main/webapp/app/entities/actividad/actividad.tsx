@@ -26,7 +26,8 @@ export class Actividad extends React.Component<IActividadProps> {
         <h2 id="actividad-heading">
           <Translate contentKey="dwbhApp.actividad.home.title">Actividads</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="dwbhApp.actividad.home.createLabel">Create new Actividad</Translate>
           </Link>
         </h2>
@@ -66,7 +67,7 @@ export class Actividad extends React.Component<IActividadProps> {
                     {actividad.planeacions
                       ? actividad.planeacions.map((val, j) => (
                           <span key={j}>
-                            <Link to={`planeacion/${val.id}`}>{val.id}</Link>
+                            <Link to={`planeacion/${val.id}`}>{val.codigoPlaneacfion}</Link>
                             {j === actividad.planeacions.length - 1 ? '' : ', '}
                           </span>
                         ))
